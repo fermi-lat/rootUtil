@@ -1,0 +1,25 @@
+------------------------------------------------------------
+User: heather  Tue Mar 11 11:56:56 PST 2003
+rootUtil
+
+Log Message:
+initial import of new ROOT utility package
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N rootUtil/.cvsignore
+N rootUtil/cmt/.cvsignore
+N rootUtil/cmt/requirements
+N rootUtil/doc/.cvsignore
+N rootUtil/doc/release.notes
+N rootUtil/rootUtil/RootInterface.h
+N rootUtil/src/mainpage.h
+N rootUtil/src/RootInterface.cxx
+N rootUtil/src/test/test_rootInterface.cxx
+
+No conflicts created by this import
+
+    *
