@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Mar 11 12:48:45 PST 2003
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+insert ld_library_path pattern
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 11 12:44:00 PST 2003
 rootUtil/cmt
 
