@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Tue Mar 11 12:40:30 PST 2003
+rootUtil/src/test
+
+Modified Files:
+	test_rootInterface.cxx 
+Added Files:
+	testRoot.root 
+Log Message:
+document and add a small test ROOT file
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 11 11:56:56 PST 2003
 rootUtil
 
