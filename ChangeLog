@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Mar 11 12:44:00 PST 2003
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update version and fix pattern to use package_shlibflags
+    *
+------------------------------------------------------------
 User: heather  Tue Mar 11 12:42:10 PST 2003
 rootUtil/doc
 
