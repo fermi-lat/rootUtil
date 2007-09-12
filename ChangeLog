@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: chamont  Wed Sep 12 06:36:53 PDT 2007
+rootUtil/src
+
+Modified Files:
+	RootInterface.cxx 
+Added Files:
+	BranchGroup.cxx Component.cxx DataHandle.cxx 
+	DataHandleBase.cxx EventPointer.cxx FileUtil.cxx OptUtil.cxx 
+	PointerIndex.cxx PointerSkim.cxx PointerUtil.cxx 
+	TreeRefHandle.cxx 
+Log Message:
+first import of former metaRootData classes
+    *
+------------------------------------------------------------
 User: chamont  Wed Sep 12 06:36:52 PDT 2007
 rootUtil/rootUtil
 
