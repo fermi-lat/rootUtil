@@ -1,6 +1,6 @@
 /** @file LinkDef.h
     @brief for rootcint
- $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/LinkDef.h,v 1.1.1.1 2007/06/29 19:32:46 echarles Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/LinkDef.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
 
 */
 #ifdef __CINT__
@@ -27,8 +27,8 @@
 
 #pragma link C++ class EventPointer;
 #pragma link C++ class TreeRefHandle;
-#pragma link C++ class Component;
-#pragma link C++ class PointerSkim;
+#pragma link C++ class EventComponent;
+#pragma link C++ class CompositeEventList;
 #pragma link C++ class PointerIndex;
 
 #pragma link C++ namespace PointerUtil;

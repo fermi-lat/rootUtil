@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: PointerUtil.h,v 1.1 2007/08/08 13:50:02 heather Exp $
+*    File: $Id: PointerUtil.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -20,15 +20,15 @@
 
 // forward declares
 class TCollection;
-class PointerSkim;
+class CompositeEventList;
 
 namespace PointerUtil {
   
   // Merge a Collection of input files into a single pointer skim
-  PointerSkim* mergeSkimsFromFiles(TCollection& skimFiles, const char* fileName=0, const char* option = "CREATE");  
+  CompositeEventList* mergeSkimsFromFiles(TCollection& skimFiles, const char* fileName=0, const char* option = "CREATE");  
   
   // Merge a Collection of pointer skims
-  PointerSkim* mergeSkims(TCollection& skims, const char* fileName=0, const char* option = "CREATE");
+  CompositeEventList* mergeSkims(TCollection& skims, const char* fileName=0, const char* option = "CREATE");
 
 }
 
