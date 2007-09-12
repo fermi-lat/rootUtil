@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CompositeEventList.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
+*    File: $Id: CompositeEventList.h,v 1.1 2007/09/12 14:20:36 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -32,7 +32,7 @@ class TFile;
 class TChain;
 class TVirtualIndex;
 class TCollection;
-class EventComponent;
+class CelComponent;
 class TObjArray;
 
 //
@@ -64,7 +64,7 @@ class CompositeEventList : public BranchGroup, public TObject {
 
 protected:
 
-  typedef std::pair<TTree*,EventComponent*> TreeAndComponent;
+  typedef std::pair<TTree*,CelComponent*> TreeAndComponent;
 
 public:
 
@@ -128,7 +128,7 @@ public:
     return (index < _compList.size()) ? _compList[index].first : 0;
   }
   // Get an event Compnent that is being read
-  EventComponent* getComponent(UInt_t index) const{
+  CelComponent* getComponent(UInt_t index) const{
     return (index < _compList.size()) ? _compList[index].second : 0;
   }
 
