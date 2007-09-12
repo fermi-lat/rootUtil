@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 06:36:53 PDT 2007
+rootUtil/src/test
+
+Removed Files:
+	testRoot.root test_rootInterface.cxx 
+Log Message:
+first import of former metaRootData classes
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 06:36:53 PDT 2007
 rootUtil/src
 
 Modified Files:
