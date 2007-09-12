@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 06:36:52 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	RootInterface.h 
+Added Files:
+	BranchGroup.h Component.h DataHandle.h DataHandleBase.h 
+	EventPointer.h FileUtil.h LinkDef.h OptUtil.h PointerIndex.h 
+	PointerSkim.h PointerUtil.h TreeRefHandle.h 
+Log Message:
+first import of former metaRootData classes
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 06:36:52 PDT 2007
 rootUtil/doc
 
 Modified Files:
