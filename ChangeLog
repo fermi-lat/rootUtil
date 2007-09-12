@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: chamont  Wed Sep 12 07:20:36 PDT 2007
+rootUtil/apps
+
+Modified Files:
+	digiMeritRecon.cxx mergeSkim.cxx printSkim.cxx 
+	testRootInterface.cxx 
+Log Message:
+PointerSkim => CompositeEventList, Component => EventComponent
+    *
+------------------------------------------------------------
 User: chamont  Wed Sep 12 06:36:53 PDT 2007
 rootUtil/src/test
 
