@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 06:36:52 PDT 2007
+rootUtil/apps/winutil
+
+Added Files:
+	XGetopt.cxx XGetopt.h 
+Log Message:
+first import of former metaRootData classes
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 06:36:52 PDT 2007
 rootUtil/apps
 
 Added Files:
