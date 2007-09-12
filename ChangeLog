@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 08:19:56 PDT 2007
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+EventComponent => CelComponent, PointerUtil => CelUtil, PointerIndex => CelIndex
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 08:19:56 PDT 2007
 rootUtil/apps
 
 Modified Files:
