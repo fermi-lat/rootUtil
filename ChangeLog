@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 07:20:36 PDT 2007
+rootUtil/src
+
+Modified Files:
+	EventPointer.cxx FileUtil.cxx PointerIndex.cxx PointerUtil.cxx 
+	TreeRefHandle.cxx 
+Added Files:
+	CompositeEventList.cxx EventComponent.cxx 
+Removed Files:
+	Component.cxx PointerSkim.cxx 
+Log Message:
+PointerSkim => CompositeEventList, Component => EventComponent
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 07:20:36 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
