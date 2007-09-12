@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 07:20:36 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	LinkDef.h PointerIndex.h PointerUtil.h 
+Added Files:
+	CompositeEventList.h EventComponent.h 
+Removed Files:
+	Component.h PointerSkim.h 
+Log Message:
+PointerSkim => CompositeEventList, Component => EventComponent
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 07:20:36 PDT 2007
 rootUtil/cmt
 
 Modified Files:
