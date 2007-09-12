@@ -3,7 +3,7 @@
 
     @author Heather Kelly
 
-    $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/test/test_rootInterface.cxx,v 1.2 2003/03/11 20:40:30 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/apps/testRootInterface.cxx,v 1.1 2007/09/12 13:36:52 chamont Exp $
   */
 
 #ifndef TEST_ROOTINTERFACE_CXX 
@@ -26,7 +26,7 @@ int main(int argn, char** argc)
   else
    { filename = "../apps/testRootInterface.root" ; }
  
-  if (gSystem->ExpandPathName(filename)==kFALSE)
+  if (gSystem->ExpandPathName(filename)==kTRUE)
    {
     std::cout << "Failed to expand env variable in filename" << std::endl;
     return -1 ;

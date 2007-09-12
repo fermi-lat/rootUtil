@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: TreeRefHandle.cxx,v 1.2 2007/08/08 13:50:02 heather Exp $
+*    File: $Id: TreeRefHandle.cxx,v 1.1 2007/09/12 13:36:53 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -64,7 +64,7 @@ TreeRefHandle::TreeRefHandle():
   _componentName(),
   _size(0,*this,"size"),
   _entries(0,*this,"entries"){
-  // Default c'tor.  Component Name is not set
+  // Default c'tor.  EventComponent Name is not set
   _treeNameList = new TObjArray;
   _fileNameList = new TObjArray;  
   _treeOffsets = new TArrayL64;
@@ -75,7 +75,7 @@ TreeRefHandle::TreeRefHandle(const std::string& componentName):
   _componentName(componentName),
   _size(0,*this,"size"),
   _entries(0,*this,"entries"){
-  // Standard c'tor.  Component Name is set
+  // Standard c'tor.  EventComponent Name is set
   _treeNameList = new TObjArray;
   _fileNameList = new TObjArray;  
   _treeOffsets = new TArrayL64;
