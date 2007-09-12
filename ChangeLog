@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 12 07:20:36 PDT 2007
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+PointerSkim => CompositeEventList, Component => EventComponent
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 12 07:20:36 PDT 2007
 rootUtil/apps
 
 Modified Files:
