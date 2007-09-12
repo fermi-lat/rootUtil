@@ -1,10 +1,10 @@
 // -*- Mode: c++ -*-
-#ifndef EventComponent_h
-#define EventComponent_h
+#ifndef CelComponent_h
+#define CelComponent_h
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: EventComponent.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
+*    File: $Id: CelComponent.h,v 1.1 2007/09/12 14:20:36 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -30,7 +30,7 @@ class TChain;
 class TEventList;
 
 //
-// EventComponent stores all the information needed to point to a part of an event
+// CelComponent stores all the information needed to point to a part of an event
 // that is located in another TTree.
 //
 // This for a single event this information is stored on two TTrees. 
@@ -41,17 +41,17 @@ class TEventList;
 // since it is shared by all the components in a skim.
 //
 
-class EventComponent {
+class CelComponent {
 
 public:
 
   // ctor's and d'tor
   // Default c'tor.  Needed for ROOT
-  EventComponent(); 
+  CelComponent(); 
   // Standard c'tor, stores the name of the component 
-  EventComponent(const std::string& componentName);
+  CelComponent(const std::string& componentName);
   // D'tor
-  virtual ~EventComponent();
+  virtual ~CelComponent();
 
   // Methods and functions
   // set the current event
@@ -89,15 +89,15 @@ protected:
 private:
   
   //disable copying and assignment
-  EventComponent(const EventComponent& other);
-  EventComponent& operator=(const EventComponent& other);
+  CelComponent(const CelComponent& other);
+  CelComponent& operator=(const CelComponent& other);
   
   // Data
   std::string   _componentName;    //! Name of this component
   EventPointer  _event;            //! Interface with the per-event data
   TreeRefHandle _tree;             //! Interface with the file reference data
 
-  ClassDef(EventComponent,0)            // Class to handle references to a single Event component
+  ClassDef(CelComponent,0)            // Class to handle references to a single Event component
 
 };
 

@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: EventPointer.cxx,v 1.1 2007/09/12 13:36:52 chamont Exp $
+*    File: $Id: EventPointer.cxx,v 1.2 2007/09/12 14:20:36 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -51,7 +51,7 @@ EventPointer::EventPointer():
   _componentName(),
   _eventIndex(-1,*this,"EvtIndex"),  
   _treeKey(FileUtil::NOKEY,*this,"TreeIndex"){
-  // Default c'tor.  EventComponent Name is not set
+  // Default c'tor.  CelComponent Name is not set
   DataHandleInstance::init();
 }
 	      
@@ -60,7 +60,7 @@ EventPointer::EventPointer(const std::string& componentName):
   _componentName(componentName),
   _eventIndex(-1,*this,"EvtIndex"),  
   _treeKey(FileUtil::NOKEY,*this,"TreeIndex"){  
-  // Standard c'tor.  EventComponent Name is set
+  // Standard c'tor.  CelComponent Name is set
   DataHandleInstance::init();
 }	      
 	      
@@ -69,7 +69,7 @@ EventPointer::EventPointer(const EventPointer& other):
   _componentName(other._componentName),
   _eventIndex(other._eventIndex,*this,"EvtIndex"),  
   _treeKey(other._treeKey,*this,"TreeIndex"){	      
-  // Copy c'tor.  EventComponent Name is copied
+  // Copy c'tor.  CelComponent Name is copied
   DataHandleInstance::init();
 }	      
 
