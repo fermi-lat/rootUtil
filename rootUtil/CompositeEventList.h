@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CompositeEventList.h,v 1.1 2007/09/12 14:20:36 chamont Exp $
+*    File: $Id: CompositeEventList.h,v 1.2 2007/09/12 15:19:56 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -44,7 +44,7 @@ class TObjArray;
 // The information is stored on 3 trees
 // 
 //   Events:  Tree with 2 Branches per input component, one entry per event
-//      Comp_EvtIndex/L  -> Index of Event in the Tree it lives on
+//      Comp_EntryIndex/L  -> Index of Event in the Tree it lives on
 //      Comp_TreeIndex/s -> Index of Tree in the Associated vector of trees
 //   
 //   Files:   Tree with 5 Branches per input component, one entry per input collection
