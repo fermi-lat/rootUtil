@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: chamont  Wed Sep 19 09:57:05 PDT 2007
+rootUtil/src
+
+Modified Files:
+	CelComponent.cxx CelEntryIndex.cxx CelIndex.cxx CelLink.cxx 
+	CelUtil.cxx CompositeEventList.cxx FileUtil.cxx 
+Added Files:
+	CelFileAndTreeNames.cxx CelManager.cxx 
+Removed Files:
+	CelFileTreeNames.cxx 
+Log Message:
+renaming goes on, and import RootIo/EventCollectionMgr as CelManager
+    *
+------------------------------------------------------------
+User: chamont  Wed Sep 19 09:57:05 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
