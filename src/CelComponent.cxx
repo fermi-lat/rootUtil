@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelComponent.cxx,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelComponent.cxx,v 1.2 2007/09/13 14:00:29 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -43,7 +43,7 @@
 // Other headers from this package
 #include "rootUtil/OptUtil.h"
 #include "rootUtil/DataHandle.h"
-#include "rootUtil/CelFileTreeNames.h"
+#include "rootUtil/CelFileAndTreeNames.h"
 
 ClassImp(CelComponent);
 

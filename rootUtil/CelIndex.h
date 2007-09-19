@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.2 2007/09/12 14:20:36 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.1 2007/09/12 15:19:56 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -54,7 +54,7 @@ class CelIndex : public TVirtualIndex {
 
 public:
   
-  // Build and return a pointer index from a pointer skim
+  // Build and return a pointer index from a CEL
   static CelIndex* buildIndex(CompositeEventList& skim, const std::string& compontent, TTree* t, Long64_t offset=0);
 
 public:
