@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelComponent.h,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelComponent.h,v 1.2 2007/09/13 14:00:29 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -22,7 +22,7 @@
 #include <string>
 
 // Headers of Data Members
-#include "CelFileTreeNames.h"
+#include "CelFileAndTreeNames.h"
 #include "CelEntryIndex.h"
 
 // Forward Declares
@@ -72,7 +72,7 @@ public:
 
   // Access
   const CelEntryIndex& eventPointer() const { return _event; }
-  const CelFileTreeNames& treePointer() const { return _tree; }
+  const CelFileAndTreeNames& treePointer() const { return _tree; }
   inline const std::string& componentName() const { return _componentName; }
 
   // Printing Functions
@@ -95,7 +95,7 @@ private:
   // Data
   std::string   _componentName;    //! Name of this component
   CelEntryIndex  _event;            //! Interface with the per-event data
-  CelFileTreeNames _tree;             //! Interface with the file reference data
+  CelFileAndTreeNames _tree;             //! Interface with the file reference data
 
   ClassDef(CelComponent,0)            // Class to handle references to a single Event component
 

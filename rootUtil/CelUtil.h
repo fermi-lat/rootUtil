@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelUtil.h,v 1.2 2007/09/12 14:20:36 chamont Exp $
+*    File: $Id: CelUtil.h,v 1.1 2007/09/12 15:19:56 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -24,10 +24,10 @@ class CompositeEventList;
 
 namespace CelUtil {
   
-  // Merge a Collection of input files into a single pointer skim
+  // Merge a Collection of input files into a single composite event list
   CompositeEventList* mergeCelFiles(TCollection&, const char* ouputfileName=0, const char* option = "CREATE");  
   
-  // Merge a Collection of pointer skims
+  // Merge a Collection of composite event lists
   CompositeEventList* mergeCompositeEventLists(TCollection&, const char* outputfileName=0, const char* option = "CREATE");
 
 }
