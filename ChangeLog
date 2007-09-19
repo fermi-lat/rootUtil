@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: chamont  Wed Sep 19 09:57:05 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	CelComponent.h CelEntryIndex.h CelIndex.h CelLink.h CelUtil.h 
+	CompositeEventList.h LinkDef.h 
+Added Files:
+	CelFileAndTreeNames.h CelManager.h 
+Removed Files:
+	CelFileTreeNames.h 
+Log Message:
+renaming goes on, and import RootIo/EventCollectionMgr as CelManager
+    *
+------------------------------------------------------------
 User: chamont  Wed Sep 19 09:57:04 PDT 2007
 rootUtil/cmt
 
