@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: FileUtil.h,v 1.1 2007/08/08 13:50:02 heather Exp $
+*    File: $Id: FileUtil.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -28,10 +28,10 @@ namespace FileUtil {
   // use OxFFFF as a guard value to persist NULL pointers
   const UShort_t NOKEY(0xFFFF); 
 
-  // Open a file.  Return NULL if failed
+  // Open a file.  Return 0 if failed
   TFile* openFile(const char* fileName);
 
-  // Get the TFile associated to a TTree.  Return NULL if failed
+  // Get the TFile associated to a TTree.  Return 0 if failed
   TFile* getFile(TTree& tree);
   
 }

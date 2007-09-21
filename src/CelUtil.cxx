@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelUtil.cxx,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelUtil.cxx,v 1.2 2007/09/19 16:57:05 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -28,7 +28,7 @@
 #include <TObjArray.h>
 
 // Other headers from this package
-#include "rootUtil/CelComponent.h"
+#include "rootUtil/CelEventComponent.h"
 #include "rootUtil/CompositeEventList.h"
 #include "rootUtil/FileUtil.h"
 
@@ -149,7 +149,7 @@ CompositeEventList* CelUtil::mergeCompositeEventLists(TCollection& skims, const 
   TTree* fileTree = TTree::MergeTrees(&fileTreeList);
 
   // Build the Pointer Skim Object
-  CompositeEventList* theSkim = new CompositeEventList(*eventTree,*linkTreeOut,*fileTree);
+  CompositeEventList* theSkim = new CompositeEventList(*linkTreeOut,*fileTree,*eventTree);
 
   // Write the Merged File, if requested
   if ( outFile != 0 ) {
