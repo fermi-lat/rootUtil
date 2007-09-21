@@ -2,14 +2,14 @@
 * @file CelManager.cxx
 * @brief definition of the class CelManager
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/RootIo/src/CelManager.cxx,v 1.3 2007/08/10 02:46:43 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.1 2007/09/19 16:57:05 chamont Exp $
 *  Original author: Heather Kelly heather@lheapop.gsfc.nasa.gov
 */
 #ifndef CelManager_cxx
 #define CelManager_cxx
 
 #include "rootUtil/CelManager.h"
-#include "rootUtil/CelComponent.h"
+#include "rootUtil/CelEventComponent.h"
 #include "TSystem.h"
 #include <iostream>
 

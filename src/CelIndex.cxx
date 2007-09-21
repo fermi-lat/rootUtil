@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.cxx,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelIndex.cxx,v 1.2 2007/09/19 16:57:05 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -51,7 +51,7 @@
 
 // Other headers from this package
 #include "rootUtil/CompositeEventList.h"
-#include "rootUtil/CelComponent.h"
+#include "rootUtil/CelEventComponent.h"
 
 
 ClassImp(CelIndex);

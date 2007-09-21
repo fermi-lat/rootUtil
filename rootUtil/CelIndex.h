@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.2 2007/09/19 16:57:05 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -25,7 +25,7 @@
 
 // forward declares
 class TTree;
-class CelComponent;
+class CelEventComponent;
 class CompositeEventList;
 
 //
@@ -68,7 +68,7 @@ public:
   virtual ~CelIndex();
 
   // Methods and functions
-  // Get the Entry Number in the CelComponent Tree
+  // Get the Entry Number in the CelEventComponent Tree
   virtual Int_t	GetEntryNumberFriend(const TTree* tree);  
   // Get the total number of Events in the index
   virtual Long64_t GetN() const;
@@ -107,7 +107,7 @@ private:
   // Data
   Long64_t     _offset;              //! Global offset (used when Index picks up in the middle of a chain)
   CompositeEventList* _skim;                //! Pointer to skim that does the actual storing
-  CelComponent*   _component;           //! Pointer to relevent component of the skim
+  CelEventComponent*   _component;           //! Pointer to relevent component of the skim
 
   ClassDef(CelIndex,0)           // Sub-class of TVirtualIndex implemented using CompositeEventList
 
