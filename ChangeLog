@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: chamont  Mon Sep 24 09:11:41 PDT 2007
+rootUtil/src
+
+Modified Files:
+	CelEntryIndex.cxx CelEventComponent.cxx CelFileAndTreeSet.cxx 
+	CompositeEventList.cxx 
+Log Message:
+various internal changes
+    *
+------------------------------------------------------------
+User: chamont  Mon Sep 24 09:11:41 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
