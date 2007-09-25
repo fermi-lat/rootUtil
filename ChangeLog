@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Tue Sep 25 05:18:33 PDT 2007
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+CelEventLink becomes CelEventInfo, and is extended with placeholders for run id and event id
+    *
+------------------------------------------------------------
 User: chamont  Tue Sep 25 04:03:16 PDT 2007
 rootUtil/src
 
