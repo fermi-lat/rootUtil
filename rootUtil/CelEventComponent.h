@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.1 2007/09/21 13:58:58 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.2 2007/09/24 16:11:41 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -40,7 +40,7 @@ class CelEventComponent
 
     // construction
     CelEventComponent() ; // needed for ROOT
-    CelEventComponent( const TString & componentName) ;
+    CelEventComponent( const TString & componentName ) ;
     virtual ~CelEventComponent() ;
 
   // Methods and functions
