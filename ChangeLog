@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: chamont  Tue Sep 25 05:18:33 PDT 2007
+rootUtil/src
+
+Modified Files:
+	CelIndex.cxx CelUtil.cxx CompositeEventList.cxx 
+Added Files:
+	CelEventInfo.cxx 
+Removed Files:
+	CelEventLink.cxx 
+Log Message:
+CelEventLink becomes CelEventInfo, and is extended with placeholders for run id and event id
+    *
+------------------------------------------------------------
+User: chamont  Tue Sep 25 05:18:33 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
