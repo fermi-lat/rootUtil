@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Tue Sep 25 08:30:29 PDT 2007
+rootUtil/src
+
+Modified Files:
+	CelManager.cxx 
+Log Message:
+Rootification : use TString and Bool_t instead of std::string and bool
+    *
+------------------------------------------------------------
+User: chamont  Tue Sep 25 08:30:29 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
