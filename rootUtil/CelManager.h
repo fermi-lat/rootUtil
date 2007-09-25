@@ -2,7 +2,7 @@
 * @file CelManager.h
 * @brief The class CelManager is used to set up and handle the composite event list (cel) root files
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.1 2007/09/19 16:57:05 chamont Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.2 2007/09/25 11:03:16 chamont Exp $
 *  Original author: Heather Kelly heather@lheapop.gsfc.nasa.gov
 */
 
@@ -43,7 +43,7 @@ class CelManager
 
     /// Reading
     bool initRead(const std::string &fileName="cel.root", bool verbose=false);
-    Long64_t getNumEntries() { return (m_celRead.nbEvents()); };
+    Long64_t getNumEvents() { return (m_celRead.numEvents()); };
     Long64_t getEventIndex(const std::string &treeName, Long64_t index);
     TChain* getChainByType(const std::string &treeName);
     int setIndex();
