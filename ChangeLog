@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Tue Sep 25 04:03:16 PDT 2007
+rootUtil/src
+
+Modified Files:
+	CelIndex.cxx CompositeEventList.cxx 
+Log Message:
+general refactoring
+    *
+------------------------------------------------------------
+User: chamont  Tue Sep 25 04:03:16 PDT 2007
 rootUtil/rootUtil
 
 Modified Files:
