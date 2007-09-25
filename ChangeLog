@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: chamont  Tue Sep 25 05:18:33 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	CelManager.h CompositeEventList.h LinkDef.h 
+Added Files:
+	CelEventInfo.h 
+Removed Files:
+	CelEventLink.h 
+Log Message:
+CelEventLink becomes CelEventInfo, and is extended with placeholders for run id and event id
+    *
+------------------------------------------------------------
+User: chamont  Tue Sep 25 05:18:33 PDT 2007
 rootUtil/cmt
 
 Modified Files:
