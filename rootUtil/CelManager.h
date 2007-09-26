@@ -6,7 +6,7 @@
 * @file CelManager.h
 * @brief The class CelManager is used to set up and handle the composite event list (cel) root files
 *
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.3 2007/09/25 12:18:33 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.4 2007/09/25 15:30:29 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -25,21 +25,22 @@ class CelManager
  {
   public :
   
-    CelManager() ;
+    CelManager( Bool_t verbose =false ) ;
     ~CelManager() ; 
 
     /// Writing 
-    Bool_t initWrite( const TString & fileName ="cel.root",
-        const TString & options ="RECREATE", Bool_t verbose =false ) ;
+    Bool_t initWrite
+     ( const TString & celFileName ="cel.root",
+       const TString & options ="RECREATE" ) ;
     Bool_t initOutputFile() ;
     UInt_t addComponent( const TString & compName, TTree * t ) ;
     Bool_t fillEvent() ; 
     Bool_t fillFileAndTreeSet() ;
 
     /// Reading
-    Bool_t initRead( const TString & fileName ="cel.root", Bool_t verbose =false ) ;
-    Long64_t getNumEvents() { return (m_celRead.numEvents()) ; }
-    Long64_t getEventIndex( const TString & treeName, Long64_t index) ;
+    Bool_t initRead( const TString & celFileName ="cel.root" ) ;
+    Long64_t getNumEvents() ;
+    Long64_t getEventIndex( const TString & treeName, Long64_t index ) ;
     TChain * getChainByType( const TString & treeName ) ;
     int setIndex() ;
 
