@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: FileUtil.h,v 1.1 2007/09/12 13:36:52 chamont Exp $
+*    File: $Id: FileUtil.h,v 1.2 2007/09/21 13:58:58 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -29,10 +29,10 @@ namespace FileUtil {
   const UShort_t NOKEY(0xFFFF); 
 
   // Open a file.  Return 0 if failed
-  TFile* openFile(const char* fileName);
+  TFile * openFile( const char * fileName ) ;
 
   // Get the TFile associated to a TTree.  Return 0 if failed
-  TFile* getFile(TTree& tree);
+  TFile* getFile( TTree & tree ) ;
   
 }
 

@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-* File: $Id: CompositeEventList.h,v 1.8 2007/09/25 12:18:33 chamont Exp $
+* File: $Id: CompositeEventList.h,v 1.9 2007/09/25 15:30:29 chamont Exp $
 * Authors:
 *   EC, Eric Charles , SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR , chamont@poly.in2p3.fr
@@ -64,6 +64,10 @@ class TObjArray ;
 //   ComponentEntries:  2 Branches per input component, 1 entry per event
 //      Comp_EntryIndex/L  -> Index of the entry in the tree it lives on
 //      Comp_TreeIndex/s -> Index of the tree in the associated set of files and trees
+//
+// Note : the couple (run_id/event_id) is expected to be unique for GLAST real data. For
+// what concerns the simulation data, the triplet {task_name,run_id,event_id} should be
+// unique.
 //   
 
 class CompositeEventList : public TObject
