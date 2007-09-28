@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Fri Sep 28 07:07:28 PDT 2007
+rootUtil/apps
+
+Modified Files:
+	digiMeritRecon.cxx printSkim.cxx 
+Log Message:
+refactoring goes on
+    *
+------------------------------------------------------------
 User: chamont  Wed Sep 26 09:01:27 PDT 2007
 rootUtil/src
 
