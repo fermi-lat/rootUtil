@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: chamont  Fri Sep 28 07:07:28 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	CelEventComponent.h CelFileAndTreeSet.h CelIndex.h 
+	CelManager.h CompositeEventList.h 
+Log Message:
+refactoring goes on
+    *
+------------------------------------------------------------
+User: chamont  Fri Sep 28 07:07:28 PDT 2007
 rootUtil/apps
 
 Modified Files:
