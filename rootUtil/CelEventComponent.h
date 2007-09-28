@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.2 2007/09/24 16:11:41 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.3 2007/09/25 11:03:16 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -54,7 +54,7 @@ class CelEventComponent
   Int_t makeBranches( TTree & fileTree, TTree & eventTree, Int_t bufsize = 32000) const;
   Int_t attachToTree( TTree & fileTree, TTree & eventTree ) ;
   // Building a TChain
-  Bool_t addToChain(TChain*& chain);  
+  Bool_t addToChain( TChain * & chain ) ;  
   // Get the offset to the first event
   Long64_t getLocalOffset() const;
   // Get the index of the event the local chain (ie, in this meta event)
