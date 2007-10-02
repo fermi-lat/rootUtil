@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: DataHandleBase.cxx,v 1.2 2007/08/08 13:50:02 heather Exp $
+*    File: $Id: DataHandleBase.cxx,v 1.1 2007/09/12 13:36:52 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -49,7 +49,7 @@ DataHandleBase::~DataHandleBase(){
   ;
 }
 
-TBranch* DataHandleBase::makeBranch(TTree& tree, const char* name, Int_t bufsize) const {
+TBranch * DataHandleBase::makeBranch( TTree & tree, const char * name, Int_t /* bufsize */ ) const {
   // Build a branch with 'name' on 'tree'
   // returns the newly built branch
   TString leafName(name);

@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.3 2007/09/25 11:03:16 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.4 2007/09/28 14:07:28 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -49,21 +49,21 @@ class CelEventComponent
   // read an event
   Int_t read();
   // Get the Tree that is being read
-  TTree* getTree() const;
-  // Tree Manipulation
-  Int_t makeBranches( TTree & fileTree, TTree & eventTree, Int_t bufsize = 32000) const;
-  Int_t attachToTree( TTree & fileTree, TTree & eventTree ) ;
-  // Building a TChain
-  Bool_t addToChain( TChain * & chain ) ;  
-  // Get the offset to the first event
-  Long64_t getLocalOffset() const;
-  // Get the index of the event the local chain (ie, in this meta event)
-  Long64_t getIndexInLocalChain() const;
+  TTree* getTree() const ;
+  
+    // Cel Tree Manipulation
+    Int_t makeBranches( TTree & fileTree, TTree & eventTree, Int_t bufsize =32000 ) const ;
+    Int_t attachToTree( TTree & fileTree, TTree & eventTree ) ;
+  
+    /// READING INTERFACE
+    // Building a TChain
+    Bool_t addToChain( TChain * & chain ) ; 
+    Long64_t indexInCurrentSet() const ;
 
-    // Access
-    const CelEntryIndex & eventPointer() const { return _currentEntryIndex ; }
-    const CelFileAndTreeSet & treePointer() const { return _currentSet ; }
-    inline const TString & componentName() const { return _componentName; }
+    // USEFUL ? Access
+    const CelEntryIndex & currentEntryIndex() const { return _currentEntryIndex ; }
+    const CelFileAndTreeSet & currentFileSet() const { return _currentSet ; }
+    inline const TString & componentName() const { return _componentName ; }
 
   // Printing Functions
   // print a single event
@@ -77,7 +77,7 @@ class CelEventComponent
   
      // disable copying and assignment
      CelEventComponent( const CelEventComponent & ) ;
-     CelEventComponent& operator=( const CelEventComponent & ) ;
+     CelEventComponent & operator=( const CelEventComponent & ) ;
   
      // data
      TString _componentName ;
