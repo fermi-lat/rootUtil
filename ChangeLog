@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: chamont  Tue Oct  2 09:21:26 PDT 2007
+rootUtil/rootUtil
+
+Modified Files:
+	CelEventComponent.h CelFileAndTreeSet.h CelIndex.h 
+	CompositeEventList.h 
+Log Message:
+work on CelIndex
+    *
+------------------------------------------------------------
 User: chamont  Fri Sep 28 07:07:28 PDT 2007
 rootUtil/src
 
