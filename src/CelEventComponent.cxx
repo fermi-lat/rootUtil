@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.cxx,v 1.3 2007/09/28 14:07:28 chamont Exp $
+*    File: $Id: CelEventComponent.cxx,v 1.4 2007/10/02 16:21:26 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -25,7 +25,7 @@
 
 #include <rootUtil/CelEventComponent.h>
 #include <rootUtil/OptUtil.h>
-#include <rootUtil/DataHandle.h>
+#include <rootUtil/BgDataHandle.h>
 #include <rootUtil/CelFileAndTreeSet.h>
 
 #include <TTree.h>
