@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.3 2007/09/28 14:07:28 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.4 2007/10/02 16:21:26 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -17,7 +17,7 @@
 
 
 #include "BranchGroup.h"
-#include "DataHandle.h"
+#include "BgDataHandle.h"
 
 #include <TString.h>
 class TChain ;
@@ -105,10 +105,10 @@ class CelFileAndTreeSet  : public BranchGroup
     TString _componentName ;
 
     // data on branches
-    DataHandle<UShort_t>  _setSize ;     //! Number of trees stored by this CelFileAndTreeSet
+    BgDataHandle<UShort_t>  _setSize ;     //! Number of trees stored by this CelFileAndTreeSet
     TObjArray*            _fileNames ;   //! Names of files where the TTree live
     TObjArray*            _treeNames ;   //! Names of trees stored by this CelFileAndTreeSet
-    DataHandle<Long64_t>  _treesSize ;   //! Number of entries on the trees stored by this CelFileAndTreeSet
+    BgDataHandle<Long64_t>  _treesSize ;   //! Number of entries on the trees stored by this CelFileAndTreeSet
     TArrayL64*            _treeOffsets ; //! Number of entries in TTrees
 
     // Cache for fast lookup

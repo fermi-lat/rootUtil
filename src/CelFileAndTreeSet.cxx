@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.cxx,v 1.3 2007/09/28 14:07:28 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.cxx,v 1.4 2007/10/02 16:21:26 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -28,7 +28,7 @@
 
 // Other headers from this package
 #include "rootUtil/FileUtil.h"
-#include "rootUtil/DataHandle.h"
+#include "rootUtil/BgDataHandle.h"
 #include "rootUtil/OptUtil.h"
 
 
