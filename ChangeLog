@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Thu Oct  4 06:52:51 PDT 2007
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+The classes related to BranchGroup are prefixed with BG, some CEL internal trree names and branch names are modified (to be continued)
+    *
+------------------------------------------------------------
 User: chamont  Tue Oct  2 09:21:26 PDT 2007
 rootUtil/src
 
