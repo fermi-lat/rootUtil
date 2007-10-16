@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventIDs.cxx,v 1.1 2007/09/25 12:18:33 chamont Exp $
+*    File: $Id: CelEventIDs.cxx,v 1.1 2007/10/04 13:52:51 chamont Exp $
 * Authors:
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
 *
@@ -51,7 +51,7 @@ void CelEventIDs::printInfo( const char * /* options */ ) const
  {
   std::cout
     << _productionID
-    << ':' << _runID
-    << ':' << _eventID ;
+    << '|' << _runID
+    << '|' << _eventID ;
  }
 

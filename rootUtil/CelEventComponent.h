@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.5 2007/10/02 16:21:26 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.6 2007/10/04 13:52:51 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -52,8 +52,8 @@ class CelEventComponent
   TTree* getTree() const ;
   
     // Cel Tree Manipulation
-    Int_t makeBranches( TTree & fileTree, TTree & eventTree, Int_t bufsize =32000 ) const ;
-    Int_t attachToTree( TTree & fileTree, TTree & eventTree ) ;
+    Int_t makeBranches( TTree & entryTree, TTree & fileTree, Int_t bufsize =32000 ) const ;
+    Int_t attachToTree( TTree & entryTree, TTree & fileTree ) ;
   
     /// READING INTERFACE
     // Building a TChain
