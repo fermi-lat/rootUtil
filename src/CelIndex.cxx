@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.cxx,v 1.6 2007/09/28 14:07:28 chamont Exp $
+*    File: $Id: CelIndex.cxx,v 1.7 2007/10/02 16:21:26 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -47,7 +47,7 @@ Int_t CelIndex::GetEntryNumberFriend( const TTree * celCompositeEvents )
   _cel->shallowRead(celCompositeEvents->GetReadEntry()) ;
   Long64_t evtIdx = _cel->fileSetOffset() ;
   evtIdx += _component->indexInCurrentSet() ;
-  // std::cout << "CelIndex::GetEntryNumberFriend(" << _cel->currentEventIndex() << ':' << evtIdx << ')' << std::endl;
+  // std::cout << "CelIndex::GetEntryNumberFriend(" << _cel->currentEventIndex() << '|' << evtIdx << ')' << std::endl;
   return evtIdx ;  
  }
 

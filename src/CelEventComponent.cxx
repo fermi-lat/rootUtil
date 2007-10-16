@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.cxx,v 1.4 2007/10/02 16:21:26 chamont Exp $
+*    File: $Id: CelEventComponent.cxx,v 1.5 2007/10/04 13:52:51 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -89,9 +89,9 @@ Int_t CelEventComponent::makeBranches( TTree & fileTree, TTree & eventTree, Int_
   return n_e + n_f ;
  }
 
-Int_t CelEventComponent::attachToTree( TTree & fileTree, TTree & eventTree )
+Int_t CelEventComponent::attachToTree( TTree & entryTree, TTree & fileTree )
  {
-  Int_t n_e = _currentEntryIndex.attachToTree(eventTree,_componentName.Data()) ;
+  Int_t n_e = _currentEntryIndex.attachToTree(entryTree,_componentName.Data()) ;
   if ( n_e < 0 ) return n_e ;
   Int_t n_f = _currentSet.attachToTree(fileTree,_componentName.Data()) ;
   if ( n_f < 0 ) return n_f ;

@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventEntry.h,v 1.4 2007/09/24 16:11:41 chamont Exp $
+*    File: $Id: CelEventEntry.h,v 1.1 2007/10/04 13:52:51 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -20,17 +20,10 @@
 class CelFileAndTreeSet ;
 
 //
-// CelEventEntry stores information needed to point to a part of an event
-// that is located in another TTree.
-//
-// CelEventEntry uses CelFileAndTreeSet to associated TTrees with UShort_t keys.
-//
-// CelEventEntry stores two pieces of information for each event.
-//
-//  _entryIndex (goes to branch XXX_EntryIndex)  is the index of the event component in the TTree
-//  _treeIndex (goes to branch XXX_TreeIndex) is the index of the TTree in the associated CelFileAndTreeSet
-//
-
+// CelEventEntry stores information needed to point to an event component,
+// which is an entry located in another tree. It includes the entry index,
+// and the index of the tree in the current set of files and trees.
+// 
 
 class CelEventEntry : public BranchGroup
  {
