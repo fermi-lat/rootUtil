@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Thu Oct 18 07:05:33 PDT 2007
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+multiple sets bug fixed, in theory
+    *
+------------------------------------------------------------
+User: chamont  Thu Oct 18 07:05:33 PDT 2007
 rootUtil/apps
 
 Modified Files:
