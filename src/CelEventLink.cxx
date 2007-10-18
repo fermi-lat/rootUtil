@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventLink.cxx,v 1.3 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelEventLink.cxx,v 1.4 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -21,15 +21,13 @@ ClassImp(CelEventLink) ;
 CelEventLink::CelEventLink()
  : BranchGroup(),
    _eventIndex(-1,*this,"Event_Index"),
-   _fileSetIndex(-1,*this,"Event_SetIndex"),
-   _fileSetOffset(-1,*this,"Event_SetOffset")
+   _setIndex(0,*this,"Event_SetIndex")
  { BgDataHandleInstance::init() ; }
 
 CelEventLink::CelEventLink( const CelEventLink & other )
  : BranchGroup(),
    _eventIndex(other._eventIndex,*this,"Event_Index"),
-   _fileSetIndex(other._fileSetIndex,*this,"Event_SetIndex"),
-   _fileSetOffset(other._fileSetOffset,*this,"Event_SetOffset")
+   _setIndex(other._setIndex,*this,"Event_SetIndex")
  {}	      
 
 CelEventLink::~CelEventLink()
@@ -39,16 +37,10 @@ CelEventLink & CelEventLink::operator=( const CelEventLink & other )
  {
   if ( this == &other ) return *this ;
   _eventIndex = other._eventIndex ;
-  _fileSetIndex  = other._fileSetIndex ;
-  _fileSetOffset = other._fileSetOffset ;
+  _setIndex  = other._setIndex ;
   return *this ;
  }
 
 void CelEventLink::printInfo( const char * /* options */ ) const
- {
-  std::cout
-    << _eventIndex
-    << '|' << _fileSetIndex
-    << '|' << _fileSetOffset ;
- }
+ { std::cout << _eventIndex << '|' << _setIndex ; }
 

@@ -1,6 +1,6 @@
 /** @file LinkDef.h
     @brief for rootcint
- $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/LinkDef.h,v 1.7 2007/09/25 12:18:33 chamont Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/LinkDef.h,v 1.8 2007/10/04 13:52:51 chamont Exp $
 
 */
 #ifdef __CINT__
@@ -30,6 +30,7 @@
 #pragma link C++ class CelEventLink ;
 #pragma link C++ class CelEventEntry ;
 #pragma link C++ class CelFileAndTreeSet ;
+#pragma link C++ class CelFileAndTreeOffset ;
 #pragma link C++ class CelIndex ;
 #pragma link C++ class CelEventComponent ;
 #pragma link C++ class CompositeEventList ;

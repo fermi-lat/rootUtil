@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventLink.h,v 1.3 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelEventLink.h,v 1.4 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -37,23 +37,18 @@ class CelEventLink : public BranchGroup
     
     // Accessors
     Long64_t eventIndex() const { return _eventIndex ; }
-    Long64_t fileSetIndex() const { return _fileSetIndex ; }
-    Long64_t fileSetOffset() const { return _fileSetOffset ; }
-    void setEventIndex( Long64_t index )
-     { _eventIndex = index ; }
-    void incrementEventIndex()
-     { _eventIndex = _eventIndex+1 ; }
-    void incrementFileSetIndex()
-     { _fileSetOffset = _eventIndex ; _fileSetIndex = _fileSetIndex+1 ; }
+    Long64_t setIndex() const { return _setIndex ; }
+    void changeEventIndex( Long64_t index ) { _eventIndex = index ; }
+    void incrementEventIndex() { _eventIndex = _eventIndex+1 ; }
+    void incrementFileSetIndex() { _setIndex = _setIndex+1 ; }
 
     // print the info about the current event
     void printInfo( const char * options ) const ;  
 
   private :
   
-	BgDataHandle<Long64_t> _eventIndex ; //! Absolute index of current composite event
-    BgDataHandle<Long64_t> _fileSetIndex ;   //! Index of the associated entry in the File Tree
-    BgDataHandle<Long64_t> _fileSetOffset ;  //! Offset in events for this entry in the File Tree
+	BgDataHandle<Long64_t> _eventIndex ;     //! Absolute index of current composite event
+    BgDataHandle<Long64_t> _setIndex ;   //! Index of the associated entry in the File Tree
 
     ClassDef(CelEventLink,0)
  } ;
