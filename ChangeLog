@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Thu Oct 18 07:05:33 PDT 2007
+rootUtil/apps
+
+Modified Files:
+	digiMeritRecon.cxx 
+Log Message:
+multiple sets bug fixed, in theory
+    *
+------------------------------------------------------------
 User: chamont  Tue Oct 16 08:19:23 PDT 2007
 rootUtil/src
 
