@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventIDs.cxx,v 1.1 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelEventIDs.cxx,v 1.2 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
 *
@@ -17,6 +17,9 @@
 #include <Riostream.h>
 #include <cassert>
 #include <cstring>
+#ifdef WIN32
+#define strdup _strdup
+#endif
 
 ClassImp(CelEventIDs) ;
 
