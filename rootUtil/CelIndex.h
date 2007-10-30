@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.5 2007/09/28 14:07:28 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.6 2007/10/02 16:21:26 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -67,6 +67,8 @@ class CelIndex : public TVirtualIndex
      { MayNotUse("GetMajorName") ; return 0 ; }
     virtual const char * GetMinorName() const
      { MayNotUse("GetMinorName") ; return 0 ; }
+    virtual void Append(const TVirtualIndex* /*ind*/ , Bool_t /*delaySort*/) 
+      { MayNotUse("Append"); }
 
   private :
   
