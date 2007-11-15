@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: chamont  Thu Nov 15 08:01:39 PST 2007
+rootUtil/apps
+
+Modified Files:
+	digiMeritRecon.cxx 
+Added Files:
+	.cvsignore RUN_TESTS testRead.cxx testWrite.cxx 
+Log Message:
+add dummy test data
+    *
+------------------------------------------------------------
 User: heather  Tue Oct 30 12:51:22 PDT 2007
 rootUtil/src
 
