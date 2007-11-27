@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.cxx,v 1.5 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.cxx,v 1.6 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -112,7 +112,7 @@ TTree* CelFileAndTreeSet::getTree(UShort_t key) const {
   return tree;
 }
 
-UShort_t CelFileAndTreeSet::getKey( TTree * tree) const
+UShort_t CelFileAndTreeSet::getKey( TTree * tree ) const
  {
   // Get the persistent KEY for a given tree
   // Return FileUtil::NOKEY if 'tree' is NULL

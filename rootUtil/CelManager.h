@@ -10,7 +10,7 @@
 * Meant to disappear, once we have understood what is lacking in CompositeEventList,
 * and what shoudl return to RootIoSvc.
 * 
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.5 2007/09/26 16:01:27 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.6 2007/09/28 14:07:28 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -58,14 +58,15 @@ class CelManager
 	/// writing data
 	TString m_fileNameWrite ;
 	TString m_outputOptions ;
-    TFile * m_fileWrite ;
+	Bool_t m_initWriteDone ;
+    //TFile * m_fileWrite ;
     CompositeEventList m_celWrite ;
     Long64_t m_eventCounter ;  // Count number of events filled to the TTree so far
     std::vector<TTree*> m_treeCol ;
 
     /// reading data
 	TString m_fileNameRead ;
-	TFile * m_fileRead ;
+	//TFile * m_fileRead ;
     CompositeEventList m_celRead ;
     TObjArray * m_compChainCol ; // List of component TChains for reading
     TChain * m_masterChain ;  // Master TChain for reading
