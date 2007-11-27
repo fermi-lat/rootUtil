@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: chamont  Tue Nov 27 14:10:21 PST 2007
+rootUtil/src
+
+Modified Files:
+	CelFileAndTreeSet.cxx CelManager.cxx CelUtil.cxx 
+	CompositeEventList.cxx TestData.cxx 
+Log Message:
+CompositeEventList does not exhibit any more the internal TFile
+    *
+------------------------------------------------------------
+User: chamont  Tue Nov 27 14:10:21 PST 2007
 rootUtil/rootUtil
 
 Modified Files:
