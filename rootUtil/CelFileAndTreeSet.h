@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.5 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.6 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -82,9 +82,9 @@ class CelFileAndTreeSet  : public BranchGroup
 
     // Printing
     // Print the list of trees
-    void show(const char* options = "tf") const ;
+    void printTreesInfo( const char * options ="tf", const char * prefix ="" ) const ;
     // Print information about a single tree
-    void printTreeInfo( UShort_t key, const char * options = "tf" ) const ;
+    void printTreeInfo( UShort_t key, const char * options ="tf", const char * prefix =""  ) const ;
 
   private :
 

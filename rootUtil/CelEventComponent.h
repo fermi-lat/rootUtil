@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.7 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.8 2007/10/18 14:05:33 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -69,9 +69,9 @@ class CelEventComponent
 
     // Printing Functions
     // print a single event
-    void dumpEvent(const char* options) const;
+    void printEventInfo(const char* options) const;
     // print all the trees used by this Components
-    void listTrees(const char* options) const;
+    void printSetInfo(const char* options) const;
 
    private :
   
