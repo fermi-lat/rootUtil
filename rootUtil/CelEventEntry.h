@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventEntry.h,v 1.1 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelEventEntry.h,v 1.2 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -50,8 +50,8 @@ class CelEventEntry : public BranchGroup
     // get the tree that is being read
     TTree * getTree( const CelFileAndTreeSet & handle ) const ;
 
-    // print the info about the current event
-    void printEventInfo( const char * options ) const ;  
+    // print the info about the entry
+    void printInfo() const ;  
 
   private :
   

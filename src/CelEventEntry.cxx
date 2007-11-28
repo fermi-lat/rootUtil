@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventEntry.cxx,v 1.1 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: CelEventEntry.cxx,v 1.2 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -113,8 +113,11 @@ TTree * CelEventEntry::getTree( const CelFileAndTreeSet & handle ) const
 // Print the information about the current event to cout
 // 
 // The print format is treeIndex|entryIndex
-void CelEventEntry::printEventInfo( const char * /* options */ ) const
+void CelEventEntry::printInfo() const
  {
-  std::cout << _treeIndex << '|' << _entryIndex ;
+  std::cout
+    <<setw(2)<<std::right<< _treeIndex
+    <<'|'
+    <<setw(2)<<std::left<< _entryIndex ;
  }
 
