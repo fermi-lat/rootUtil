@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Fri Dec  7 06:44:04 PST 2007
+rootUtil/apps
+
+Modified Files:
+	testGenerateData.cxx testMakeCel.cxx testReadCel.cxx 
+Log Message:
+many bug fixes, especially about CEL with multiple sets
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p2, operation: add
 Package: rootUtil
