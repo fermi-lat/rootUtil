@@ -10,7 +10,7 @@
 * Meant to disappear, once we have understood what is lacking in CompositeEventList,
 * and what shoudl return to RootIoSvc.
 * 
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.6 2007/09/28 14:07:28 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.7 2007/11/27 22:10:21 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -43,7 +43,7 @@ class CelManager
     /// Reading
     Bool_t initRead( const TString & celFileName ="cel.root" ) ;
     Long64_t getNumEvents() ;
-    Long64_t getEventIndex( const TString & treeName, Long64_t index ) ;
+    Long64_t getEventIndexInTree( const TString & treeName, Long64_t index ) ;
     TChain * getChainByType( const TString & treeName ) ;
     int setIndex() ;
 
