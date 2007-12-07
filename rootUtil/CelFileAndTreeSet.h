@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.6 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.7 2007/11/28 22:00:30 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -107,7 +107,7 @@ class CelFileAndTreeSet  : public BranchGroup
 
     // Cache for fast lookup
     mutable std::map<UShort_t,TTree*> _cache ;  //! Maps key -> tree
-    mutable std::map<TTree*,UShort_t> _lookup ; //! Reverse map, for making sure we don't screw up
+    mutable std::map<TString,UShort_t> _lookup ; //! Reverse map, for making sure we don't screw up
 
     ClassDef(CelFileAndTreeSet,0) // For handling referenece to trees
  } ;

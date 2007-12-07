@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.8 2007/10/18 14:05:33 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.9 2007/11/28 22:00:30 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -65,13 +65,13 @@ class CelEventComponent
     const CelEventEntry & currentEntryIndex() const { return _currentEntryIndex ; }
     const CelFileAndTreeSet & currentFileSet() const { return _currentSet ; }
     CelFileAndTreeOffset & currentFileOffset() { return _currentOffset ; }
-    inline const TString & componentName() const { return _componentName ; }
+    const TString & componentName() const { return _componentName ; }
 
     // Printing Functions
     // print a single event
-    void printEventInfo(const char* options) const;
+    void printEventInfo(const char* options ) const;
     // print all the trees used by this Components
-    void printSetInfo(const char* options) const;
+    void printSetInfo(const char* options, const char * prefix ="" ) const;
 
    private :
   
@@ -84,6 +84,11 @@ class CelEventComponent
      CelEventEntry _currentEntryIndex ;
      CelFileAndTreeSet _currentSet ;
      CelFileAndTreeOffset _currentOffset ;
+     
+     // data for deep read
+	 TTree * _tree ;
+	 TString _mainBranchName ;
+	 void**  _data ;
 
      ClassDef(CelEventComponent,0)
 

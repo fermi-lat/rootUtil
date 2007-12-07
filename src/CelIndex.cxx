@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.cxx,v 1.8 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelIndex.cxx,v 1.9 2007/10/18 14:05:33 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -41,10 +41,22 @@ Long64_t CelIndex::GetN() const
   return _cel->numEvents() ;
  }
 
-Int_t CelIndex::GetEntryNumberFriend( const TTree * celCompositeEvents )
+Int_t CelIndex::GetEntryNumberFriend( const TTree * eventLinksChain )
  {
-  if (_cel==0||_component==0) { return -1 ; }
-  _cel->shallowRead(celCompositeEvents->GetReadEntry()) ;
+  if (_cel==0||_component==0)
+   { return -1 ; }
+//  TString mainPath(eventLinksChain->GetDirectory()->GetName()) ;
+//  mainPath += '/' ;
+//  mainPath += eventLinksChain->GetName() ;
+//  TString friendPath(fTree->GetDirectory()->GetName()) ;
+//  friendPath += '/' ;
+//  friendPath += fTree->GetName() ;
+//  std::cout
+//    <<std::endl
+//    <<"  main   : "<<mainPath<<std::endl
+//    <<"  friend : "<<friendPath<<std::endl ;
+  ULong64_t mainEntryIndex = eventLinksChain->GetReadEntry() ;
+  _cel->shallowRead(mainEntryIndex) ;
   Long64_t evtIdx = _component->currentIndexInChain() ;
   // std::cout << "CelIndex::GetEntryNumberFriend(" << _cel->currentEventIndex() << '|' << evtIdx << ')' << std::endl;
   return evtIdx ;  

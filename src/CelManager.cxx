@@ -3,7 +3,7 @@
 * @file CelManager.cxx
 * @brief definition of the class CelManager
 *
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.5 2007/09/28 14:07:28 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.6 2007/11/27 22:10:21 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -183,7 +183,7 @@ Bool_t CelManager::initRead( const TString & celFileName )
 Long64_t CelManager::getNumEvents()
  { return (m_celRead.numEvents()) ; }
 
-Long64_t CelManager::getEventIndex( const TString & treeName, Long64_t index)
+Long64_t CelManager::getEventIndexInTree( const TString & treeName, Long64_t index)
  {
   // make sure the cel index is the active TVirtualIndex
   setIndex() ;
@@ -191,7 +191,9 @@ Long64_t CelManager::getEventIndex( const TString & treeName, Long64_t index)
   if (retVal<0) return retVal ;
   TChain * compChain = getChainByType(treeName) ;
   if (!compChain) return -1 ;
-  return (compChain->GetReadEntry()) ;
+  // [David] before 5.16, there is a bug on TChain::GetReadEntry()
+  // That'why I am working on trees
+  return (compChain->GetTree()->GetReadEntry()) ;
  }
 
 int CelManager::setIndex()
