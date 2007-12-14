@@ -10,7 +10,7 @@
 * Meant to disappear, once we have understood what is lacking in CompositeEventList,
 * and what shoudl return to RootIoSvc.
 * 
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.7 2007/11/27 22:10:21 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.8 2007/12/07 14:44:04 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -36,7 +36,7 @@ class CelManager
     Bool_t initWrite
      ( const TString & celFileName ="cel.root",
        const TString & options ="RECREATE" ) ;
-    UInt_t addComponent( const TString & compName, TTree * t ) ;
+    Bool_t addComponent( const TString & compName, TTree * t ) ;
     Bool_t fillEvent() ; 
     Bool_t fillFileAndTreeSet() ;
 
@@ -60,14 +60,15 @@ class CelManager
 	TString m_outputOptions ;
 	Bool_t m_initWriteDone ;
     //TFile * m_fileWrite ;
-    CompositeEventList m_celWrite ;
+    CompositeEventList * m_celWrite ;
     Long64_t m_eventCounter ;  // Count number of events filled to the TTree so far
+    TObjArray m_componentNamesCol ;
     std::vector<TTree*> m_treeCol ;
 
     /// reading data
 	TString m_fileNameRead ;
 	//TFile * m_fileRead ;
-    CompositeEventList m_celRead ;
+    CompositeEventList * m_celRead ;
     TObjArray * m_compChainCol ; // List of component TChains for reading
     TChain * m_masterChain ;  // Master TChain for reading
     std::map<TString, TVirtualIndex*> m_chainIndexCol ;
