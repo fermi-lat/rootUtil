@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelUtil.cxx,v 1.7 2007/10/18 14:05:33 chamont Exp $
+*    File: $Id: CelUtil.cxx,v 1.8 2007/11/27 22:10:21 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -45,9 +45,8 @@ CompositeEventList* CelUtil::mergeCelFiles(TCollection& skimFiles, const char* f
     }
 
     // Open the skim
-    CompositeEventList* nextSkim = new CompositeEventList;
-    Bool_t check = nextSkim->openCelFile(aFile->GetName());
-    if ( check == kFALSE ) {
+    CompositeEventList * nextSkim = new CompositeEventList(aFile->GetName()) ;
+    if ( nextSkim->isOk() == kFALSE ) {
       std::cerr << "Failed to open skim file " << aFile->GetName() << std::endl;
       return 0;
     }
