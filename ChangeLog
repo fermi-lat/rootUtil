@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: chamont  Fri Dec 14 06:35:24 PST 2007
+rootUtil/apps
+
+Modified Files:
+	digiMeritRecon.cxx printSkim.cxx testMakeCel.cxx 
+	testReadCel.cxx 
+Log Message:
+Still reviewing CompositeEventList interface and implementation. Since the entries are filled all together, the same is true now for the components and is integrated in the constructor. Of course it would be better to be able to declare component names one by one, and the entries the same, but we must have both, or the user could too easily fill the entries with an ordering different from the one when declaring the component names.
+    *
+------------------------------------------------------------
 User: chamont  Fri Dec  7 06:44:04 PST 2007
 rootUtil/src
 
