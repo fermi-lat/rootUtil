@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.9 2007/11/28 22:00:30 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.10 2007/12/07 14:44:04 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -49,16 +49,20 @@ class CelEventComponent
     Int_t makeBranches( TTree * entryTree, TTree * fileTree, TTree * offsetTree =0, Int_t bufsize =32000 ) const ;
     Int_t attachToTree( TTree * entryTree, TTree * fileTree, TTree * offsetTree =0 ) ;
   
-    // WRITING INTERFACE
+    // Write
     void registerEntry( TTree & tree ) ;
     void nextSet() ;
   
-    /// READING INTERFACE
-    // Building a TChain
-    Bool_t addToChain( TChain * & chain ) ; 
+    /// Shallow read
+    Bool_t addSetToChain( TChain * & chain ) ; 
     Long64_t currentIndexInChain() const ;
-    // With deep read
-    Int_t read() ;
+
+    /// Deep read
+//    void setDataAddress
+//     ( const TString & componentName,
+//       const TString & branchName,
+//       void** address ) ;
+    Int_t deepRead() ;
     TTree * getTree() const ;
 
     // USEFUL ? Access
