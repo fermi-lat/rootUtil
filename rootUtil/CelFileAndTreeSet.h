@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.7 2007/11/28 22:00:30 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.8 2007/12/07 14:44:04 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -60,7 +60,8 @@ class CelFileAndTreeSet  : public BranchGroup
 
     // Methods and functions
     // Reset this object and clear caches
-    void reset() ;
+    void resetAll() ;
+    void resetCache() ;
     
     // Data Access
     UShort_t addTree( TTree & tree) ;
