@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 17 09:02:18 PST 2008
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+temporary work around to get test apps to run on windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1, operation: add
 Package: rootUtil
