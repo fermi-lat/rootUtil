@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Tue Jan 22 06:26:55 PST 2008
+rootUtil/apps
+
+Modified Files:
+	testGenerateData.cxx testMakeCel.cxx testReadCel.cxx 
+Log Message:
+try to hide TestData static strings
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p1, operation: add
 Package: rootUtil
