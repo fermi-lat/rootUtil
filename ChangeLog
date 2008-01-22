@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Tue Jan 22 06:26:55 PST 2008
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+try to hide TestData static strings
+    *
+------------------------------------------------------------
+User: chamont  Tue Jan 22 06:26:55 PST 2008
 rootUtil/apps
 
 Modified Files:
