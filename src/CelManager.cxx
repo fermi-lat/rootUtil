@@ -3,7 +3,7 @@
 * @file CelManager.cxx
 * @brief definition of the class CelManager
 *
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.7 2007/12/07 14:44:04 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.8 2007/12/14 14:35:24 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -77,6 +77,10 @@ Bool_t CelManager::delayedInitWrite()
      << "Error while making "
      << m_fileNameWrite << std::endl ;
     return m_initWriteDone ;
+   } else {
+   // HMK Should set to true if m_celWrite is ok, avoid throwing exception
+   // in fillEvent
+       m_initWriteDone=kTRUE;
    }
   
   return m_initWriteDone ;
