@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Tue Jan 22 06:26:56 PST 2008
+rootUtil/src
+
+Modified Files:
+	CompositeEventList.cxx TestData.cxx 
+Log Message:
+try to hide TestData static strings
+    *
+------------------------------------------------------------
+User: chamont  Tue Jan 22 06:26:56 PST 2008
 rootUtil/rootUtil
 
 Modified Files:
