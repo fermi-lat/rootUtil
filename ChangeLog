@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jan 22 13:05:52 PST 2008
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+set m_initWriteDone to true when init is finished
+    *
+------------------------------------------------------------
 User: chamont  Tue Jan 22 06:26:56 PST 2008
 rootUtil/src
 
