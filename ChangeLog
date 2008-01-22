@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Tue Jan 22 06:26:56 PST 2008
+rootUtil/rootUtil
+
+Modified Files:
+	TestData.h 
+Log Message:
+try to hide TestData static strings
+    *
+------------------------------------------------------------
 User: chamont  Tue Jan 22 06:26:55 PST 2008
 rootUtil/cmt
 
