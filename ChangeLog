@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Thu Jan 24 12:56:16 PST 2008
+rootUtil/rootUtil
+
+Modified Files:
+	CelManager.h CompositeEventList.h TestData.h 
+Log Message:
+reimplement lazy preparation of read and/or write
+    *
+------------------------------------------------------------
 User: chamont  Thu Jan 24 12:56:15 PST 2008
 rootUtil/apps
 
