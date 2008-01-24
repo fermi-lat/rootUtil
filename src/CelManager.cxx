@@ -3,7 +3,7 @@
 * @file CelManager.cxx
 * @brief definition of the class CelManager
 *
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.8 2007/12/14 14:35:24 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.9 2008/01/22 21:05:52 heather Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr
@@ -119,7 +119,7 @@ Bool_t CelManager::fillEvent()
    }
   catch(...)
    {
-    std::cerr << "Error filling Meta ROOT file" << std::endl ;
+    std::cerr << "Error filling CEL ROOT file" << std::endl ;
     std::cerr.flush() ;
     throw ;
    }
@@ -131,6 +131,13 @@ Bool_t CelManager::fillFileAndTreeSet()
   Bool_t stat = kTRUE ;
   try
    {
+    if (m_initWriteDone==kFALSE)
+     {
+      std::cout << "WARNING in final write to CEL ROOT file : no event registered" << std::endl ; 
+      if (delayedInitWrite()==kFALSE)
+       { throw ; }
+     }
+
     TDirectory * saveDir = gDirectory ;
     // [David] I guess this cd() is useless ?
     //m_fileWrite->cd() ;
@@ -142,8 +149,7 @@ Bool_t CelManager::fillFileAndTreeSet()
    }
   catch(...)
    {
-    std::cerr << "Failed final write to meta ROOT file" << std::endl ; 
-    std::cerr.flush(); 
+    std::cerr << "Failed final write to CEL ROOT file" << std::endl ; 
     throw ;
    }
   return stat ;
