@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Thu Jan 24 12:56:16 PST 2008
+rootUtil/src
+
+Modified Files:
+	CelManager.cxx CompositeEventList.cxx 
+Log Message:
+reimplement lazy preparation of read and/or write
+    *
+------------------------------------------------------------
+User: chamont  Thu Jan 24 12:56:16 PST 2008
 rootUtil/rootUtil
 
 Modified Files:
