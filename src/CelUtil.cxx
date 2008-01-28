@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelUtil.cxx,v 1.8 2007/11/27 22:10:21 chamont Exp $
+*    File: $Id: CelUtil.cxx,v 1.9 2007/12/14 14:35:24 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -28,7 +28,7 @@
 // Other headers from this package
 #include "rootUtil/CelEventComponent.h"
 #include "rootUtil/CompositeEventList.h"
-#include "rootUtil/FileUtil.h"
+#include "rootUtil/RuUtil.h"
 
 
 CompositeEventList* CelUtil::mergeCelFiles(TCollection& skimFiles, const char* fileName, const char* option) {
