@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: chamont  Mon Jan 28 05:22:47 PST 2008
+rootUtil/rootUtil
+
+Modified Files:
+	CompositeEventList.h 
+Added Files:
+	RuUtil.h 
+Removed Files:
+	FileUtil.h OptUtil.h 
+Log Message:
+Group together utilities. Now support the filling from TTrees which are in write mode
+    *
+------------------------------------------------------------
+User: chamont  Mon Jan 28 05:22:47 PST 2008
 rootUtil/apps
 
 Modified Files:
