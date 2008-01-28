@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: chamont  Mon Jan 28 05:22:47 PST 2008
+rootUtil/src
+
+Modified Files:
+	BranchGroup.cxx CelEventComponent.cxx CelEventEntry.cxx 
+	CelFileAndTreeOffset.cxx CelFileAndTreeSet.cxx CelUtil.cxx 
+	CompositeEventList.cxx 
+Added Files:
+	RuUtil.cxx 
+Removed Files:
+	FileUtil.cxx OptUtil.cxx 
+Log Message:
+Group together utilities. Now support the filling from TTrees which are in write mode
+    *
+------------------------------------------------------------
+User: chamont  Mon Jan 28 05:22:47 PST 2008
 rootUtil/rootUtil
 
 Modified Files:
