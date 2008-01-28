@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: BranchGroup.cxx,v 1.2 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: BranchGroup.cxx,v 1.3 2007/10/16 15:19:23 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -77,7 +77,7 @@ Int_t BranchGroup::makeBranches( TTree & tree, const char * prefix, Int_t bufsiz
 
 // Attaches to branches with names 'prefix''branchName' on 'tree'
 // returns the number of newly attached branches, or -1 for failure
-Int_t BranchGroup::attachToTree(TTree& tree, const char* prefix) const
+Int_t BranchGroup::attachToTree( TTree & tree, const char * prefix ) const
  {
   std::string prefixName ;
   if ( prefix != 0 )

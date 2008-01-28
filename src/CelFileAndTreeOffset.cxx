@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.cxx,v 1.6 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelFileAndTreeOffset.cxx,v 1.1 2007/10/18 14:05:33 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -27,9 +27,9 @@
 #include <TArrayL64.h>
 
 // Other headers from this package
-#include "rootUtil/FileUtil.h"
+#include "rootUtil/RuUtil.h"
 #include "rootUtil/BgDataHandle.h"
-#include "rootUtil/OptUtil.h"
+#include "rootUtil/RuUtil.h"
 
 
 ClassImp(CelFileAndTreeOffset) ;

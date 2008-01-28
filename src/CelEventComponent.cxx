@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.cxx,v 1.10 2007/12/17 18:10:02 chamont Exp $
+*    File: $Id: CelEventComponent.cxx,v 1.11 2007/12/18 16:00:30 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -24,10 +24,10 @@
 //
 
 #include <rootUtil/CelEventComponent.h>
-#include <rootUtil/OptUtil.h>
+#include <rootUtil/RuUtil.h>
 #include <rootUtil/BgDataHandle.h>
 #include <rootUtil/CelFileAndTreeSet.h>
-#include <rootUtil/FileUtil.h>
+#include <rootUtil/RuUtil.h>
 
 #include <TTree.h>
 #include <TFile.h>
@@ -67,15 +67,18 @@ CelEventComponent::~CelEventComponent()
 void CelEventComponent::registerEntry( TTree & tree )
  {
   UShort_t tIdx = _currentSet.getKey(&tree) ;
-  if ( tIdx == FileUtil::NOKEY )
+  if ( tIdx == rootUtil::NOKEY )
    {
-	tIdx = _currentSet.addTree(tree) ;
+    tIdx = _currentSet.addTree(tree) ;
 //    std::cout
 //      <<"[CelEventEntry::set] new tree "<<&tree
 //      <<" has received index "<<tIdx
 //      <<std::endl ;
    }
-  _currentEntryIndex.set(tIdx,tree.GetReadEntry()) ;
+  if (tree.GetDirectory()->IsWritable()==kTRUE)
+   { _currentEntryIndex.set(tIdx,tree.GetEntries()-1) ; }
+  else
+   { _currentEntryIndex.set(tIdx,tree.GetReadEntry()) ; }
  }
 
 void CelEventComponent::nextSet()
@@ -184,7 +187,7 @@ Long64_t CelEventComponent::currentIndexInChain() const
 
 void CelEventComponent::printEventInfo( const char * options ) const
  {
-  if ( OptUtil::has_option(options,'v') )
+  if ( rootUtil::has_option(options,'v') )
    { _currentSet.printTreeInfo(_currentEntryIndex.treeIndex(),options) ; }  
   _currentEntryIndex.printInfo() ;
  }
