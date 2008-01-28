@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Mon Jan 28 05:22:47 PST 2008
+rootUtil/apps
+
+Modified Files:
+	testReadCel.cxx 
+Log Message:
+Group together utilities. Now support the filling from TTrees which are in write mode
+    *
+------------------------------------------------------------
 User: chamont  Fri Jan 25 15:23:06 PST 2008
 rootUtil/src
 
