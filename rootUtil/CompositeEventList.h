@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-* File: $Id: CompositeEventList.h,v 1.22 2008/01/24 20:56:16 chamont Exp $
+* File: $Id: CompositeEventList.h,v 1.23 2008/01/28 13:22:47 chamont Exp $
 * Authors:
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
 *   EC, Eric Charles , SLAC, echarles@slac.stanford.edu
@@ -83,7 +83,7 @@ class CompositeEventList : public TObject
  {
 
   public :
-
+   
     // Construction and components
     explicit CompositeEventList
      ( const TString & celFileName = "",
@@ -94,7 +94,7 @@ class CompositeEventList : public TObject
     ~CompositeEventList() ;
 
     // OK! Write
-    Long64_t fillEvent( const TObjArray & trees ) ;
+    Long64_t fillEvent( const TObjArray & realTrees ) ;
     Long64_t fillEvent( const std::vector<TTree*> & ) ;
     Long64_t fillEvent( const std::vector<TChain*> & ) ;
     Long64_t fillFileAndTreeSet() ;
@@ -132,7 +132,7 @@ class CompositeEventList : public TObject
     // Dump a single event
     void printEventInfo( const char * options ="" ) ;
     // Dump the list of TTree where our events live
-    void printSetsInfo( const char * options ) ;
+    void printSetInfo( const char * options ) ;
 
     /// FOR CelUtil
     TTree * entryTree() { return _entryTree ; }
@@ -195,6 +195,13 @@ class CompositeEventList : public TObject
     std::vector<TString> _compNames ;   //! names of components
     std::map<TString,UInt_t> _compMap ; //! components lookup map to get the index in the list above from the name
 
+    // internal print stuff
+    unsigned int _componentNameWidth ;
+    unsigned int _setNumberWidth ;
+    unsigned int _eventNumberWidth ;
+    unsigned int _treeNumberWidth ;
+    unsigned int _entryNumberWidth ;
+    
     ClassDef(CompositeEventList,0)
 
  } ;

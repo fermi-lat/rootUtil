@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.11 2007/12/17 18:10:02 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.12 2007/12/18 16:00:30 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -50,7 +50,7 @@ class CelEventComponent
     Int_t attachToTree( TTree * entryTree, TTree * fileTree, TTree * offsetTree =0 ) ;
   
     // Write
-    void registerEntry( TTree & tree ) ;
+    void registerEntry( TTree & ) ;
     void nextSet() ;
   
     /// Shallow read
