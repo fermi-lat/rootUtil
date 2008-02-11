@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: chamont  Mon Feb 11 10:43:50 PST 2008
+rootUtil/apps
+
+Modified Files:
+	RUN_TESTS 
+Added Files:
+	TRY celInspect.cxx celRelocate.cxx 
+Removed Files:
+	inspectCel.cxx 
+Log Message:
+new celRelocate application
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-02-00, operation: add
 Package: rootUtil
