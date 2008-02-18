@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: chamont  Mon Feb 18 08:34:50 PST 2008
+rootUtil/src
+
+Modified Files:
+	CelFileAndTreeSet.cxx CompositeEventList.cxx TestData.cxx 
+Added Files:
+	ComponentsInfo.cxx ComponentsInfoGlast.cxx 
+Log Message:
+Introduce the ComponentsInfo classes, which contain the meta-data about components
+    *
+------------------------------------------------------------
 User: chamont  Mon Feb 18 08:34:49 PST 2008
 rootUtil/rootUtil
 
