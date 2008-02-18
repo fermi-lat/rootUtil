@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: chamont  Mon Feb 18 08:34:49 PST 2008
+rootUtil/apps
+
+Modified Files:
+	TRY celInspect.cxx testMakeCel.cxx testReadCel.cxx 
+Added Files:
+	celConvert.cxx 
+Log Message:
+Introduce the ComponentsInfo classes, which contain the meta-data about components
+    *
+------------------------------------------------------------
 User: chamont  Mon Feb 11 10:43:51 PST 2008
 rootUtil/src
 
