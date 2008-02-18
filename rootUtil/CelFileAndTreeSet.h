@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.8 2007/12/07 14:44:04 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.9 2007/12/18 16:00:30 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -25,6 +25,7 @@ class TTree ;
 class TFile ;
 class TObjArray ;
 class TArrayL64 ;
+class TObjString ;
 
 #include <map>
 
@@ -67,6 +68,8 @@ class CelFileAndTreeSet  : public BranchGroup
     UShort_t addTree( TTree & tree) ;
     UShort_t getKey( TTree * tree) const ;
     TTree * getTree( UShort_t key ) const ;
+    const TObjString * getFileName( UShort_t key ) const ;
+    const TObjString * getTreeName( UShort_t key ) const ;
     Long64_t getOffset( UShort_t key ) const ;
 
     // reading interface

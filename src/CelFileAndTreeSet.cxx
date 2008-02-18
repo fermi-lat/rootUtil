@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.cxx,v 1.11 2008/01/28 13:22:47 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.cxx,v 1.12 2008/02/11 18:43:50 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -125,6 +125,13 @@ TTree* CelFileAndTreeSet::getTree( UShort_t key ) const {
   }
   return tree;
 }
+
+const TObjString * CelFileAndTreeSet::getFileName( UShort_t key ) const
+ { return (const TObjString *)(_fileNames->UncheckedAt(key)) ; }
+
+
+const TObjString * CelFileAndTreeSet::getTreeName( UShort_t key ) const
+ { return (const TObjString *)(_treeNames->UncheckedAt(key)) ; }
 
 UShort_t CelFileAndTreeSet::getKey( TTree * tree ) const
  {

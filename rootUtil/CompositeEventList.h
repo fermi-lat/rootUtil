@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-* File: $Id: CompositeEventList.h,v 1.23 2008/01/28 13:22:47 chamont Exp $
+* File: $Id: CompositeEventList.h,v 1.24 2008/02/11 18:43:50 chamont Exp $
 * Authors:
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
 *   EC, Eric Charles , SLAC, echarles@slac.stanford.edu
@@ -106,6 +106,8 @@ class CompositeEventList : public TObject
     TChain * newChain( UInt_t componentIndex ) const ;
     Int_t shallowRead( Long64_t eventIndex ) ;
     Long64_t entryIndex( UInt_t componentIndex ) const ;
+    const TObjString * fileName( UInt_t componentIndex ) const ;
+    const TObjString * treeName( UInt_t componentIndex ) const ;
     
     // OK! Deep read (handle the user data trees)
     void setDataAddress
