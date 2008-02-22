@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.cxx,v 1.11 2007/12/18 16:00:30 chamont Exp $
+*    File: $Id: CelEventComponent.cxx,v 1.12 2008/01/28 13:22:47 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -172,7 +172,7 @@ Int_t CelEventComponent::attachToTree( TTree * entryTree, TTree * fileTree, TTre
  }
 
 // Building a TChain
-Bool_t CelEventComponent::addSetToChain( TChain * & chain )
+Bool_t CelEventComponent::addSetToChain( RuChain * & chain )
  { return _currentSet.addToChain(chain) ; }
 
 Long64_t CelEventComponent::currentIndexInChain() const
