@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.12 2007/12/18 16:00:30 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.13 2008/02/11 18:43:50 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -20,7 +20,7 @@
 
 #include <Rtypes.h>
 #include <TString.h>
-class TChain;
+class RuChain;
 class TEventList;
 
 //
@@ -54,7 +54,7 @@ class CelEventComponent
     void nextSet() ;
   
     /// Shallow read
-    Bool_t addSetToChain( TChain * & chain ) ; 
+    Bool_t addSetToChain( RuChain * & chain ) ; 
     Long64_t currentIndexInChain() const ;
 
     /// Deep read

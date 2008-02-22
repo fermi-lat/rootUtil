@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.cxx,v 1.12 2008/02/11 18:43:50 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.cxx,v 1.13 2008/02/18 16:34:49 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -13,13 +13,13 @@
 
 
 #include "rootUtil/CelFileAndTreeSet.h"
+#include "rootUtil/RuChain.h"
 
 // c++/stl headers
 #include <iostream>
 #include <assert.h>
 
 // ROOT Headers
-#include <TChain.h>
 #include <TTree.h>
 #include <TFile.h>
 #include <TObjString.h>
@@ -244,14 +244,14 @@ Int_t CelFileAndTreeSet::attachToTree( TTree & tree, const char * prefix )
 //======================================================================================
 
 
-Bool_t CelFileAndTreeSet::addToChain( TChain * & chain )
+Bool_t CelFileAndTreeSet::addToChain( RuChain * & chain )
  {
   UShort_t treeIndex ;
   for ( treeIndex=0 ; treeIndex<_setSize ; treeIndex++ )
    {
-	const char * tName = _treeNames->UncheckedAt(treeIndex)->GetName() ;
-	if (chain==0)
-     { chain = new TChain(tName,"Cel Component Chain") ; }
+    const char * tName = _treeNames->UncheckedAt(treeIndex)->GetName() ;
+    if (chain==0)
+     { chain = new RuChain(tName,"Cel Component Chain") ; }
     const char * fName = _fileNames->UncheckedAt(treeIndex)->GetName() ;
     chain->AddFile(fName,-1,tName) ;
    }

@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.9 2007/12/18 16:00:30 chamont Exp $
+*    File: $Id: CelFileAndTreeSet.h,v 1.10 2008/02/18 16:34:49 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -20,7 +20,7 @@
 #include "BgDataHandle.h"
 
 #include <TString.h>
-class TChain ;
+class RuChain ;
 class TTree ;
 class TFile ;
 class TObjArray ;
@@ -73,7 +73,7 @@ class CelFileAndTreeSet  : public BranchGroup
     Long64_t getOffset( UShort_t key ) const ;
 
     // reading interface
-    Bool_t addToChain( TChain * & chain ) ;  
+    Bool_t addToChain( RuChain * & chain ) ;  
   
     // Override the methods in BranchGroup.  
     virtual Int_t makeBranches( TTree & celTree, const char * prefix = 0, Int_t bufsize = 32000) const ;
