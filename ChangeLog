@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: chamont  Fri Feb 22 04:15:23 PST 2008
+rootUtil/src
+
+Modified Files:
+	CelEventComponent.cxx CelFileAndTreeSet.cxx 
+	ComponentsInfoGlast.cxx CompositeEventList.cxx 
+Added Files:
+	RuInvertedIndex.cxx 
+Log Message:
+New class RuChain, a kind of TChain which dispatch new-tree events to observers. New class RuInvertedIndex, lolooking like TChainIndex but doing the inverted conversion from entry number to major/minor pair, taking profit of eventual exiting index in trees so to speed up the task. Thanks to those new classes, celConvert.exe is now able to extract the list of run/event pairs from a ROOT CEL.
+    *
+------------------------------------------------------------
 User: chamont  Fri Feb 22 04:15:22 PST 2008
 rootUtil/rootUtil
 
