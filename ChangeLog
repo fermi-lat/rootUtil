@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Fri Feb 22 04:51:07 PST 2008
+rootUtil/src
+
+Modified Files:
+	CompositeEventList.cxx RuInvertedIndex.cxx 
+Log Message:
+In the write interface of CompositeEventList, one can now fill the component entries one by one, before a final call to filleEvent()
+    *
+------------------------------------------------------------
 User: chamont  Fri Feb 22 04:51:06 PST 2008
 rootUtil/rootUtil
 
