@@ -1,4 +1,77 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r3, operation: add
+Package: rootUtil
+User: heather  Sun Feb 24 19:54:21 2008
+Files:
+  rootUtil/.cvsignore  1.1.1.1
+  rootUtil/ChangeLog  1.141
+  rootUtil/apps/RUN_TESTS  1.3
+  rootUtil/apps/testReadCel.cxx  1.10
+  rootUtil/apps/celInspect.cxx  1.2
+  rootUtil/apps/CLEAN_TESTS  1.1
+  rootUtil/apps/testMakeCel.cxx  1.6
+  rootUtil/apps/testRootInterface.cxx  1.2
+  rootUtil/apps/testGenerateData.cxx  1.4
+  rootUtil/apps/.cvsignore  1.1
+  rootUtil/apps/mergeSkim.cxx  1.4
+  rootUtil/apps/testRootInterface.root  1.1
+  rootUtil/apps/digiMeritRecon.cxx  1.8
+  rootUtil/apps/TRY  1.3
+  rootUtil/apps/celConvert.cxx  1.2
+  rootUtil/apps/celRelocate.cxx  1.1
+  rootUtil/apps/winutil/XGetopt.h  1.1
+  rootUtil/apps/winutil/XGetopt.cxx  1.2
+  rootUtil/cmt/.cvsignore  1.1.1.1
+  rootUtil/cmt/requirements  1.25
+  rootUtil/cmt/Makefile  1.1
+  rootUtil/doc/.cvsignore  1.1.1.1
+  rootUtil/doc/release.notes  1.11
+  rootUtil/rootUtil/BgDataHandleBase.h  1.1
+  rootUtil/rootUtil/CelEventEntry.h  1.4
+  rootUtil/rootUtil/RuUtil.h  1.1
+  rootUtil/rootUtil/BranchGroup.h  1.2
+  rootUtil/rootUtil/RuChain.h  1.1
+  rootUtil/rootUtil/CelIndex.h  1.7
+  rootUtil/rootUtil/TestData.h  1.9
+  rootUtil/rootUtil/CelEventIDs.h  1.1
+  rootUtil/rootUtil/CelEventComponent.h  1.14
+  rootUtil/rootUtil/BgDataHandle.h  1.2
+  rootUtil/rootUtil/CelUtil.h  1.2
+  rootUtil/rootUtil/CompositeEventList.h  1.27
+  rootUtil/rootUtil/CelManager.h  1.10
+  rootUtil/rootUtil/LinkDef.h  1.10
+  rootUtil/rootUtil/ComponentsInfoGlast.h  1.1
+  rootUtil/rootUtil/CelEventLink.h  1.5
+  rootUtil/rootUtil/.cvsignore  1.1
+  rootUtil/rootUtil/ComponentsInfo.h  1.1
+  rootUtil/rootUtil/RootInterface.h  1.3
+  rootUtil/rootUtil/RuInvertedIndex.h  1.2
+  rootUtil/rootUtil/CelFileAndTreeSet.h  1.11
+  rootUtil/rootUtil/CelFileAndTreeOffset.h  1.1
+  rootUtil/src/RootInterface.cxx  1.4
+  rootUtil/src/CelManager.cxx  1.10
+  rootUtil/src/CelEventLink.cxx  1.5
+  rootUtil/src/RuUtil.cxx  1.1
+  rootUtil/src/CelEventEntry.cxx  1.6
+  rootUtil/src/RuInvertedIndex.cxx  1.2
+  rootUtil/src/mainpage.h  1.1.1.1
+  rootUtil/src/CelFileAndTreeOffset.cxx  1.2
+  rootUtil/src/CompositeEventList.cxx  1.27
+  rootUtil/src/CelFileAndTreeSet.cxx  1.14
+  rootUtil/src/BgDataHandle.cxx  1.1
+  rootUtil/src/ComponentsInfoGlast.cxx  1.2
+  rootUtil/src/ComponentsInfo.cxx  1.1
+  rootUtil/src/TestData.cxx  1.7
+  rootUtil/src/CelUtil.cxx  1.10
+  rootUtil/src/CelEventIDs.cxx  1.3
+  rootUtil/src/BgDataHandleBase.cxx  1.1
+  rootUtil/src/BranchGroup.cxx  1.4
+  rootUtil/src/CelEventComponent.cxx  1.13
+  rootUtil/src/CelIndex.cxx  1.10
+
+    *
+------------------------------------------------------------
 User: heather  Sun Feb 24 19:54:08 PST 2008
 rootUtil/doc
 
