@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 10 11:52:59 PDT 2008
+rootUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev13r9p6
+	requirements 
+Log Message:
+patch for root v5.18
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-03-00, operation: add
 Package: rootUtil
