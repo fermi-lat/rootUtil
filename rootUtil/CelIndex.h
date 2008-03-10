@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.6 2007/10/02 16:21:26 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.7 2007/10/30 19:51:22 heather Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -54,7 +54,7 @@ class CelIndex : public TVirtualIndex
 
     // Dummy implementation
     CelIndex() ; // Needed for ROOT
-    virtual void UpdateFormulaLeaves() { return ; }
+    virtual void UpdateFormulaLeaves(const TTree*) { return ; }
     virtual void SetTree( const TTree * tree )
      { fTree = const_cast<TTree*>(tree) ; }
   
