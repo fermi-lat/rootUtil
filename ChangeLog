@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:48 PDT 2008
+GlastRelease-scons/rootUtil
+
+Added Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-03-01, operation: add
 Package: rootUtil
