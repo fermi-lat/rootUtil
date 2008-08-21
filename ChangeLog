@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Thu Aug 21 09:31:34 PDT 2008
+rootUtil/apps
+
+Modified Files:
+	RUN_TESTS celConvert.cxx celRelocate.cxx 
+Log Message:
+commit old pending changes for celConvert.cxx
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:42:39 PDT 2008
 GlastRelease-scons/rootUtil
 
