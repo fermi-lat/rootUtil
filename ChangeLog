@@ -1,5 +1,22 @@
 ------------------------------------------------------------
 User: chamont  Fri Aug 22 06:13:45 PDT 2008
+rootUtil/src
+
+Modified Files:
+	BgDataHandle.cxx BgDataHandleBase.cxx BranchGroup.cxx 
+	CelEventComponent.cxx CelEventEntry.cxx CelEventIDs.cxx 
+	CelEventLink.cxx CelFileAndTreeOffset.cxx 
+	CelFileAndTreeSet.cxx CelIndex.cxx CelManager.cxx CelUtil.cxx 
+	ComponentsInfo.cxx ComponentsInfoGlast.cxx 
+	CompositeEventList.cxx RootInterface.cxx RuInvertedIndex.cxx 
+	TestData.cxx 
+Added Files:
+	RuChain.cxx RuStringSet.cxx 
+Log Message:
+Tests on major/minor types and values + CEL shallow writing
+    *
+------------------------------------------------------------
+User: chamont  Fri Aug 22 06:13:45 PDT 2008
 rootUtil/rootUtil
 
 Modified Files:
