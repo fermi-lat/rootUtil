@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Fri Aug 22 06:13:45 PDT 2008
+rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Tests on major/minor types and values + CEL shallow writing
+    *
+------------------------------------------------------------
+User: chamont  Fri Aug 22 06:13:45 PDT 2008
 rootUtil/apps
 
 Modified Files:
