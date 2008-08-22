@@ -1,5 +1,21 @@
 ------------------------------------------------------------
 User: chamont  Fri Aug 22 06:13:45 PDT 2008
+rootUtil/rootUtil
+
+Modified Files:
+	BgDataHandle.h BgDataHandleBase.h BranchGroup.h 
+	CelEventComponent.h CelEventEntry.h CelEventIDs.h 
+	CelEventLink.h CelFileAndTreeOffset.h CelFileAndTreeSet.h 
+	CelIndex.h CelManager.h CelUtil.h ComponentsInfo.h 
+	CompositeEventList.h LinkDef.h RootInterface.h RuChain.h 
+	RuInvertedIndex.h TestData.h 
+Added Files:
+	RuStringSet.h 
+Log Message:
+Tests on major/minor types and values + CEL shallow writing
+    *
+------------------------------------------------------------
+User: chamont  Fri Aug 22 06:13:45 PDT 2008
 rootUtil/doc
 
 Modified Files:
