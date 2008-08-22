@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventLink.cxx,v 1.4 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelEventLink.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr

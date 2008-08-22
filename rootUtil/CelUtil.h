@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelUtil.h,v 1.1 2007/09/12 15:19:56 chamont Exp $
+*    File: $Id: CelUtil.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *

@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.7 2007/10/30 19:51:22 heather Exp $
+*    File: $Id: CelIndex.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -15,11 +15,15 @@
 *
 */
 
-#include <TVirtualIndex.h>
-class TTree ;
-class TChain ;
 class CompositeEventList ;
 class CelEventComponent ;
+
+class TTree ;
+class TChain ;
+
+#include <TVirtualIndex.h>
+#include <RVersion.h> // needed so to have macro ROOT_VERSION_CODE
+
 #include <string>
 
 //
@@ -54,8 +58,11 @@ class CelIndex : public TVirtualIndex
 
     // Dummy implementation
     CelIndex() ; // Needed for ROOT
-    virtual void UpdateFormulaLeaves(const TTree*) { return ; }
-
+#if ROOT_VERSION(5,18,0) <= ROOT_VERSION_CODE
+      virtual void UpdateFormulaLeaves( const TTree * ) { return ; }
+#else
+      virtual void UpdateFormulaLeaves() { return ; }
+#endif
     virtual void SetTree( const TTree * tree )
      { fTree = const_cast<TTree*>(tree) ; }
   
@@ -81,7 +88,7 @@ class CelIndex : public TVirtualIndex
     CompositeEventList * _cel ;      //! Pointer to the CEL
     CelEventComponent * _component ; //! Pointer to the component associated to the current index
 
-    ClassDef(CelIndex,0)
+//    ClassDef(CelIndex,0)
 
  } ;
 

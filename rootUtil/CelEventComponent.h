@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.h,v 1.13 2008/02/11 18:43:50 chamont Exp $
+*    File: $Id: CelEventComponent.h,v 1.2 2008/06/10 13:28:42 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -51,6 +51,7 @@ class CelEventComponent
   
     // Write
     void registerEntry( TTree & ) ;
+    void registerEntry( const TString & filePath, const TString & treeName, Long64_t treeNbEntries, Long64_t entryIndex ) ; // shallow flavor
     void nextSet() ;
   
     /// Shallow read
@@ -75,7 +76,7 @@ class CelEventComponent
     // print a single event
     void printEventInfo(const char* options ) const;
     // print all the trees used by this Components
-    void printSetInfo(const char* options, const char * prefix ="" ) const;
+    void printSetInfo(const char* options, const char* prefix ="" ) const;
 
    private :
   

@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: BranchGroup.cxx,v 1.3 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: BranchGroup.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *

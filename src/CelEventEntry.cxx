@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventEntry.cxx,v 1.5 2007/12/17 18:10:03 chamont Exp $
+*    File: $Id: CelEventEntry.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *

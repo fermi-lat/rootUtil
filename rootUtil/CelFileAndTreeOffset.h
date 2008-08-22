@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelFileAndTreeSet.h,v 1.6 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelFileAndTreeOffset.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -24,7 +24,7 @@ class TChain ;
 class TTree ;
 class TFile ;
 class TObjArray ;
-class TArrayL64 ;
+//class TArrayL64 ;
 
 class CelFileAndTreeOffset  : public BranchGroup
  {

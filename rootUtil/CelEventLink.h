@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventLink.h,v 1.4 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelEventLink.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -43,7 +43,7 @@ class CelEventLink : public BranchGroup
     void incrementFileSetIndex() { _setIndex = _setIndex+1 ; }
 
     // print the info about the current event
-    void printInfo( const char * options ) const ;  
+    void printInfo( const char* options ) const ;
 
   private :
   

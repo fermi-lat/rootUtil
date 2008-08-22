@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventComponent.cxx,v 1.12 2008/01/28 13:22:47 chamont Exp $
+*    File: $Id: CelEventComponent.cxx,v 1.2 2008/06/10 13:28:42 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -79,6 +79,16 @@ void CelEventComponent::registerEntry( TTree & tree )
    { _currentEntryIndex.set(tIdx,tree.GetEntries()-1) ; }
   else
    { _currentEntryIndex.set(tIdx,tree.GetReadEntry()) ; }
+ }
+
+void CelEventComponent::registerEntry
+ ( const TString & filePath, const TString & treeName,
+   Long64_t treeNbEntries, Long64_t entryIndex )
+ {
+  UShort_t tIdx = _currentSet.getKey(filePath,treeName) ;
+  if ( tIdx == rootUtil::NOKEY )
+   { tIdx = _currentSet.addTree(filePath,treeName,treeNbEntries) ; }
+  _currentEntryIndex.set(tIdx,entryIndex) ;
  }
 
 void CelEventComponent::nextSet()
