@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelEventIDs.cxx,v 1.2 2007/10/16 15:19:23 chamont Exp $
+*    File: $Id: CelEventIDs.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
 *

@@ -3,7 +3,7 @@
 * @file CelManager.cxx
 * @brief definition of the class CelManager
 *
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/src/CelManager.cxx,v 1.9 2008/01/22 21:05:52 heather Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/DataServer/rootUtil/CelManager.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr

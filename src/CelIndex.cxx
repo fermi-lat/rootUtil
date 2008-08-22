@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.cxx,v 1.9 2007/10/18 14:05:33 chamont Exp $
+*    File: $Id: CelIndex.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -18,7 +18,7 @@
 #include <TTree.h>
 #include <Riostream.h>
 
-ClassImp(CelIndex) ;
+//ClassImp(CelIndex) ;
 
 CelIndex::CelIndex()
  : TVirtualIndex(), _cel(0), _component(0)

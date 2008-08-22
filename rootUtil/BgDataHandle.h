@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: BgDataHandle.h,v 1.1 2007/10/04 13:52:51 chamont Exp $
+*    File: $Id: BgDataHandle.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *

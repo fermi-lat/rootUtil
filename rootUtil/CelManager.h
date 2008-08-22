@@ -10,7 +10,7 @@
 * Meant to disappear, once we have understood what is lacking in CompositeEventList,
 * and what should return to RootIoSvc.
 * 
-* File: $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/CelManager.h,v 1.9 2007/12/14 14:35:24 chamont Exp $
+* File: $Header: /nfs/slac/g/glast/ground/cvs/DataServer/rootUtil/CelManager.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
 * Authors:
 *   HK, Heather Kelly, heather@lheapop.gsfc.nasa.gov
 *   DC, David Chamont, LLR, chamont@poly.in2p3.fr

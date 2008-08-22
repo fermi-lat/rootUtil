@@ -11,7 +11,7 @@
     @brief An interface to low-level ROOT file access.
 
     @author Heather Kelly
-    $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/rootUtil/RootInterface.h,v 1.2 2003/03/11 20:41:47 heather Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/DataServer/rootUtil/RootInterface.h,v 1.1 2008/03/13 14:04:47 chamont Exp $
 
   */
 class RootInterface
