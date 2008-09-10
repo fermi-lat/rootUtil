@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.1 2008/08/15 21:22:48 ecephas Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.2 2008/08/22 13:30:23 glastrm Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
 # Version: rootUtil-01-04-00
 import os
@@ -13,7 +13,10 @@ libEnv.Tool('rootUtilLib', depsOnly = 1)
 
 rootUtilRootcint = libEnv.Rootcint('rootUtil/rootUtil_rootcint', ['rootUtil/BranchGroup.h','rootUtil/BgDataHandleBase.h',
 		'rootUtil/BgDataHandle.h', 'rootUtil/CompositeEventList.h','rootUtil/CelEventComponent.h','rootUtil/CelEventEntry.h',
-  		'rootUtil/CelFileAndTreeSet.h','rootUtil/CelFileAndTreeOffset.h','rootUtil/CelEventIDs.h'])
+  		'rootUtil/CelFileAndTreeSet.h','rootUtil/CelFileAndTreeOffset.h','rootUtil/CelEventIDs.h',
+		'rootUtil/CelEventLink.h', 'rootUtil/CelUtil.h', 'rootUtil/ComponentsInfo.h',
+		'rootUtil/TestData.h', 'rootUtil/LinkDef.h'],
+		includes = [''])
  
 rootUtil = libEnv.SharedLibrary('rootUtil', listFiles(['src/*.cxx']) + ['rootUtil/rootUtil_rootcint.cxx'])
 
