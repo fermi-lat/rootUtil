@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Wed Sep 10 07:46:53 PDT 2008
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Changed formatting and added 'rootUtil/LinkDef.h' to list of headers in libEnv.Rootcint call
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-04-00, operation: add
 Package: rootUtil
