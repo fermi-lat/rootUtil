@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Oct 27 10:49:11 PDT 2008
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	rootUtilLib.py 
+Log Message:
+Added env.Tool('addLibrary', library = env['rootLibs'])
+    *
+------------------------------------------------------------
 User: ecephas  Mon Oct 27 10:47:55 PDT 2008
 GlastRelease-scons/rootUtil
 
