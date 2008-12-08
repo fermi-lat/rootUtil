@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:40:44 PST 2008
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for rootUtil v1r3 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: ecephas  Mon Oct 27 10:49:11 PDT 2008
 GlastRelease-scons/rootUtil
 
