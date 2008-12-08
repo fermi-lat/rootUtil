@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.3 2008/09/10 14:46:52 ecephas Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.4 2008/10/27 17:47:55 ecephas Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
-# Version: rootUtil-01-04-00
+# Version: rootUtil-01-03-00
 import os
 Import('baseEnv')
 Import('listFiles')
@@ -36,3 +36,6 @@ progEnv.Tool('registerObjects', package = 'rootUtil', libraries = [rootUtil],
 	testApps = [testMakeCel, testReadCel, testGenerateData, testRootInterface],
 	binaries = [celRelocate,celConvert,celInspect,digiMeritRecon,mergeSkim],
 	includes = listFiles(['rootUtil/*.h']))
+
+
+
