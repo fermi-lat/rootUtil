@@ -2,6 +2,16 @@
 TAG
 Tag name: rootUtil-01-03-00, operation: add
 Package: rootUtil
+User: ecephas  Mon Dec  8 16:08:58 2008
+Files:
+  rootUtil/rootUtilLib.py  1.3
+  rootUtil/rootUtilLib.py  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: rootUtil-01-03-00, operation: add
+Package: rootUtil
 User: ecephas  Mon Dec  8 13:40:50 2008
 Files:
   rootUtil/SConscript  1.5
