@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+TAG
+Tag name: rootUtil-01-04-00, operation: mov
+Package: rootUtil
+User: glastrm  Thu Jan 22 16:32:04 2009
+Files:
+  rootUtil/SConscript  1.6
+  rootUtil/SConscript  1.6
+  rootUtil/SConscript  1.6
+  rootUtil/rootUtilLib.py  1.3
+  rootUtil/rootUtilLib.py  1.3
+  rootUtil/rootUtilLib.py  1.3
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:07:53 PST 2009
 GlastRelease-scons/rootUtil
 
