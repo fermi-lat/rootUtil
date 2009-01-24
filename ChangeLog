@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: rootUtil-01-04-00, operation: add
+Package: rootUtil
+User: glastrm  Sat Jan 24 09:58:08 2009
+Files:
+  rootUtil/rootUtilLib.py  1.3
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: rootUtil-01-03-00, operation: del
 Package: rootUtil
 User: glastrm  Sat Jan 24 08:29:41 2009
