@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 TAG
+Tag name: v1r3, operation: del
+Package: rootUtil
+User: glastrm  Sat Jan 24 10:00:21 2009
+Files:
+  rootUtil/rootUtilLib.py  1.3
+  rootUtil/SConscript  1.5
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v1r4, operation: add
 Package: rootUtil
 User: glastrm  Sat Jan 24 09:59:12 2009
