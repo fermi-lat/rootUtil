@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug 27 09:40:20 PDT 2009
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+SConscript:  convert to registerTargets
+.cvsignore:  ignore build, *.pyc
+
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  1 10:08:48 PDT 2009
 rootUtil/doc
 
