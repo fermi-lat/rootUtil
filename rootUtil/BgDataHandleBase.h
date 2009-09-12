@@ -4,7 +4,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: BgDataHandleBase.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
+*    File: $Id: BgDataHandleBase.h,v 1.2 2008/08/22 13:13:45 chamont Exp $
 * Authors:
 *   EC, Eric Charles,    SLAC              echarles@slac.stanford.edu
 *
@@ -44,7 +44,7 @@ public:
   // Default c'tor
   BgDataHandleBase(){;}
   // Copy c'tor
-  BgDataHandleBase(const BgDataHandleBase& other){;}
+  BgDataHandleBase(const BgDataHandleBase& /*other*/){;}
   // D'tor
   virtual ~BgDataHandleBase();
 
