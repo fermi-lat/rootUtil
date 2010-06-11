@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.7 2009/08/27 16:40:20 jrb Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.8 2009/09/12 05:08:45 heather Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
 # Version: rootUtil-01-04-01
 import os
@@ -9,19 +9,28 @@ Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('rootUtilLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='rootUtil', toBuild='rootlib')
 
 rootUtilRootcint = libEnv.Rootcint('rootUtil/rootUtil_rootcint',
-                                   ['rootUtil/BranchGroup.h','rootUtil/BgDataHandleBase.h',
-                                    'rootUtil/BgDataHandle.h', 'rootUtil/CompositeEventList.h',
-                                    'rootUtil/CelEventComponent.h','rootUtil/CelEventEntry.h',
-                                    'rootUtil/CelFileAndTreeSet.h','rootUtil/CelFileAndTreeOffset.h','rootUtil/CelEventIDs.h',
-                                    'rootUtil/CelEventLink.h', 'rootUtil/CelUtil.h', 'rootUtil/ComponentsInfo.h',
-                                    'rootUtil/TestData.h','rootUtil/LinkDef.h'],
+                                   ['rootUtil/BranchGroup.h',
+                                    'rootUtil/BgDataHandleBase.h',
+                                    'rootUtil/BgDataHandle.h',
+                                    'rootUtil/CompositeEventList.h',
+                                    'rootUtil/CelEventComponent.h',
+                                    'rootUtil/CelEventEntry.h',
+                                    'rootUtil/CelFileAndTreeSet.h',
+                                    'rootUtil/CelFileAndTreeOffset.h',
+                                    'rootUtil/CelEventIDs.h',
+                                    'rootUtil/CelEventLink.h',
+                                    'rootUtil/CelUtil.h',
+                                    'rootUtil/ComponentsInfo.h',
+                                    'rootUtil/TestData.h',
+                                    'rootUtil/LinkDef.h'],
 		includes = [''])
 libEnv['rootcint_node'] = rootUtilRootcint
  
-rootUtil = libEnv.SharedLibrary('rootUtil', listFiles(['src/*.cxx']) + ['rootUtil/rootUtil_rootcint.cxx'])
+rootUtil = libEnv.RootDynamicLibrary('rootUtil',
+                                     listFiles(['src/*.cxx']) + ['rootUtil/rootUtil_rootcint.cxx'])
 
 progEnv.Tool('rootUtilLib')
 testRootInterface = progEnv.Program('testRootInterface',
@@ -39,7 +48,8 @@ testReadCel = progEnv.Program('testReadCel',['apps/testReadCel.cxx'])
 progEnv.Tool('registerTargets', package = 'rootUtil',
              rootcintSharedCxts = [[rootUtil, libEnv]], 
 	testAppCxts = [[testMakeCel,progEnv], [testReadCel, progEnv],
-                       [testGenerateData, progEnv],  [testRootInterface, progEnv]],
+                       [testGenerateData, progEnv],
+                       [testRootInterface, progEnv]],
 	binaryCxts = [[celRelocate,progEnv], [celConvert, progEnv],
                       [celInspect, progEnv], [digiMeritRecon,progEnv],
                       [mergeSkim,progEnv]],
