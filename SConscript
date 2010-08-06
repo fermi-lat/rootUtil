@@ -1,14 +1,14 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.9 2010/06/11 00:48:43 jrb Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.10 2010/06/13 07:04:20 jrb Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
 # Version: rootUtil-01-04-02
-import os
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
+locIncs = listFiles(['rootUtil/*.h'])
 libEnv.Tool('addLinkDeps', package='rootUtil', toBuild='rootlib')
 
 rootUtilRootcint = libEnv.Rootcint('rootUtil/rootUtil_rootcint',
@@ -26,7 +26,9 @@ rootUtilRootcint = libEnv.Rootcint('rootUtil/rootUtil_rootcint',
                                     'rootUtil/ComponentsInfo.h',
                                     'rootUtil/TestData.h',
                                     'rootUtil/LinkDef.h'],
-		includes = [''])
+                                   includes = [''],
+                                   packageName = 'rootUtil',
+                                   localIncludes = locIncs)
 libEnv['rootcint_node'] = rootUtilRootcint
  
 rootUtil = libEnv.RootDynamicLibrary('rootUtil',
