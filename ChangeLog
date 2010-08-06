@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug  6 13:25:56 PDT 2010
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+add new keyword args to Rootcint call
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-04-02, operation: add
 Package: rootUtil
