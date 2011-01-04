@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.11 2010/08/06 20:25:56 jrb Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/SConscript,v 1.12 2010/08/09 20:37:59 jrb Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
 # Version: rootUtil-01-04-03
 Import('baseEnv')
@@ -34,6 +34,7 @@ libEnv['rootcint_node'] = rootUtilRootcint
 rootUtil = libEnv.RootDynamicLibrary('rootUtil',
                                      listFiles(['src/*.cxx']) + ['rootUtil/rootUtil_rootcint.cxx'])
 
+progEnv.Tool('facilitiesLib')
 progEnv.Tool('rootUtilLib')
 testRootInterface = progEnv.Program('testRootInterface',
                                     ['apps/testRootInterface.cxx'])
