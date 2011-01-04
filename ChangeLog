@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  4 14:31:04 PST 2011
+GlastRelease-scons/rootUtil
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	SConscript 
+Log Message:
+programs depend on facilities even though library does not
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-04-03, operation: add
 Package: rootUtil
