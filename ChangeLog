@@ -2,6 +2,16 @@
 TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: rootUtil
+User: heather  Wed Sep  7 10:29:08 2011
+Files:
+  rootUtil/apps/winutil/XGetopt.h  1.1
+  rootUtil/apps/winutil/XGetopt.cxx  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: rootUtil
 User: heather  Wed Sep  7 10:29:02 2011
 Files:
   rootUtil/.cvsignore  1.2
