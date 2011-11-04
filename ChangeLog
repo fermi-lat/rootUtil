@@ -1,5 +1,83 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-gr13, operation: add
+Package: rootUtil
+User: heather  Fri Nov  4 09:38:52 2011
+Files:
+  rootUtil/.cvsignore  1.2
+  rootUtil/ChangeLog  1.200
+  rootUtil/SConscript  1.12
+  rootUtil/rootUtilLib.py  1.3
+  rootUtil/apps/RUN_TESTS  1.5
+  rootUtil/apps/testReadCel.cxx  1.10
+  rootUtil/apps/celInspect.cxx  1.3
+  rootUtil/apps/CLEAN_TESTS  1.1
+  rootUtil/apps/testMakeCel.cxx  1.6
+  rootUtil/apps/testRootInterface.cxx  1.2
+  rootUtil/apps/.cvsignore  1.1
+  rootUtil/apps/testGenerateData.cxx  1.4
+  rootUtil/apps/mergeSkim.cxx  1.4
+  rootUtil/apps/testRootInterface.root  1.1
+  rootUtil/apps/digiMeritRecon.cxx  1.8
+  rootUtil/apps/TRY  1.3
+  rootUtil/apps/celConvert.cxx  1.4
+  rootUtil/apps/celRelocate.cxx  1.2
+  rootUtil/apps/winutil/XGetopt.h  1.1
+  rootUtil/apps/winutil/XGetopt.cxx  1.2
+  rootUtil/cmt/.cvsignore  1.1.1.1
+  rootUtil/cmt/requirements  1.29
+  rootUtil/cmt/Makefile  1.1
+  rootUtil/doc/.cvsignore  1.1.1.1
+  rootUtil/doc/release.notes  1.17
+  rootUtil/rootUtil/BgDataHandleBase.h  1.3
+  rootUtil/rootUtil/RuStringSet.h  1.1
+  rootUtil/rootUtil/CelEventEntry.h  1.5
+  rootUtil/rootUtil/RuUtil.h  1.1
+  rootUtil/rootUtil/RuChain.h  1.2
+  rootUtil/rootUtil/BranchGroup.h  1.3
+  rootUtil/rootUtil/CelIndex.h  1.9
+  rootUtil/rootUtil/TestData.h  1.10
+  rootUtil/rootUtil/CelEventIDs.h  1.2
+  rootUtil/rootUtil/CelEventComponent.h  1.15
+  rootUtil/rootUtil/BgDataHandle.h  1.3
+  rootUtil/rootUtil/CelUtil.h  1.3
+  rootUtil/rootUtil/CompositeEventList.h  1.28
+  rootUtil/rootUtil/LinkDef.h  1.11
+  rootUtil/rootUtil/CelManager.h  1.11
+  rootUtil/rootUtil/CelEventLink.h  1.6
+  rootUtil/rootUtil/.cvsignore  1.1
+  rootUtil/rootUtil/ComponentsInfoGlast.h  1.1
+  rootUtil/rootUtil/ComponentsInfo.h  1.2
+  rootUtil/rootUtil/RootInterface.h  1.4
+  rootUtil/rootUtil/RuInvertedIndex.h  1.3
+  rootUtil/rootUtil/CelFileAndTreeSet.h  1.12
+  rootUtil/rootUtil/CelFileAndTreeOffset.h  1.2
+  rootUtil/src/RootInterface.cxx  1.5
+  rootUtil/src/RuStringSet.cxx  1.1
+  rootUtil/src/CelManager.cxx  1.11
+  rootUtil/src/CelEventLink.cxx  1.6
+  rootUtil/src/RuUtil.cxx  1.1
+  rootUtil/src/CelEventEntry.cxx  1.7
+  rootUtil/src/RuInvertedIndex.cxx  1.3
+  rootUtil/src/RuChain.cxx  1.1
+  rootUtil/src/mainpage.h  1.1.1.1
+  rootUtil/src/CelFileAndTreeOffset.cxx  1.3
+  rootUtil/src/CompositeEventList.cxx  1.28
+  rootUtil/src/CelFileAndTreeSet.cxx  1.15
+  rootUtil/src/BgDataHandle.cxx  1.2
+  rootUtil/src/ComponentsInfoGlast.cxx  1.3
+  rootUtil/src/ComponentsInfo.cxx  1.2
+  rootUtil/src/TestData.cxx  1.8
+  rootUtil/src/CelUtil.cxx  1.11
+  rootUtil/src/CelEventIDs.cxx  1.4
+  rootUtil/src/BgDataHandleBase.cxx  1.2
+  rootUtil/src/BranchGroup.cxx  1.5
+  rootUtil/src/CelIndex.cxx  1.11
+  rootUtil/src/CelEventComponent.cxx  1.14
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-gr12, operation: add
 Package: rootUtil
 User: heather  Fri Oct 28 20:38:18 2011
