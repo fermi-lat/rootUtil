@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  3 13:42:17 PST 2012
+GlastRelease-scons/rootUtil/src
+
+Modified Files:
+	BgDataHandle.cxx 
+Log Message:
+Conform to C++ standard, required update for gcc41 compiler
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr17, operation: add
 Package: rootUtil
