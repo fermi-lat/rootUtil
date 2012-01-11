@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Jan 11 13:42:16 PST 2012
+GlastRelease-scons/rootUtil/src
+
+Modified Files:
+	RuChain.cxx 
+Log Message:
+fix gcc4.4 build
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-04-04, operation: add
 Package: rootUtil
