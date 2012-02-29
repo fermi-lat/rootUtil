@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 28 16:27:22 PST 2012
+GlastRelease-scons/rootUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+use installed XGetopt.obj
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr24, operation: add
 Package: rootUtil
