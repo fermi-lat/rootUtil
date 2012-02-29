@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Tue Feb 28 16:27:22 PST 2012
+GlastRelease-scons/rootUtil/apps
+
+Modified Files:
+	celConvert.cxx celInspect.cxx celRelocate.cxx 
+	digiMeritRecon.cxx mergeSkim.cxx 
+Log Message:
+use installed XGetopt.obj
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 28 16:27:22 PST 2012
 GlastRelease-scons/rootUtil
 
 Modified Files:
