@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Sun Mar  4 12:51:18 PST 2012
+GlastRelease-scons/rootUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use facilities rather than local XGetopt 
+    *
+------------------------------------------------------------
 TAG
 Tag name: rootUtil-01-04-05, operation: add
 Package: rootUtil
