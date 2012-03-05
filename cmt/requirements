@@ -2,7 +2,7 @@ package rootUtil
 version v1r4p6
 author David Chamont <chamont@llr.in2p3.fr>
 
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/cmt/requirements,v 1.32 2012/03/04 20:51:18 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/cmt/requirements,v 1.33 2012/03/04 20:51:53 jrb Exp $
 
 use GlastPolicy v*
 use RootcintPolicy v* GlastPolicy
@@ -24,7 +24,8 @@ apply_pattern root_package headers="\
 
 private
 
-use facilities
+use facilities *
+apply_pattern use_facilities_symbols
 
 macro_append ROOT_libs " -lTreePlayer -lHist -lGraf3d " WIN32 " libTreePlayer.lib libHist.lib libGraf3d.lib "
 application testRootInterface ../apps/testRootInterface.cxx
