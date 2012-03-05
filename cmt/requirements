@@ -1,8 +1,8 @@
 package rootUtil
-version v1r4p6
+version v1r4p7
 author David Chamont <chamont@llr.in2p3.fr>
 
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/rootUtil/cmt/requirements,v 1.33 2012/03/04 20:51:53 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/cmt/requirements,v 1.34 2012/03/05 02:42:08 jrb Exp $
 
 use GlastPolicy v*
 use RootcintPolicy v* GlastPolicy
