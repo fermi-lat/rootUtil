@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.17 2012/03/05 02:42:36 jrb Exp $ 
+# $Header: /nfs/slac/g/glast/ground/cvs/rootUtil/SConscript,v 1.18 2012/08/20 19:23:15 jrb Exp $ 
 # Authors: David Chamont <chamont@llr.in2p3.fr>
-# Version: rootUtil-01-05-00
+# Version: rootUtil-01-05-01
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
