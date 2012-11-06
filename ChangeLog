@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Nov  5 16:54:09 PST 2012
+rootUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+minor update for ROOT v5.34
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-06-04, operation: add
 Package: rootUtil
