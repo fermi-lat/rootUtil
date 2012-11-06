@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.1 2008/03/13 14:04:46 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.9 2008/08/22 13:13:45 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -53,7 +53,7 @@ class CelIndex : public TVirtualIndex
     // The real useful stuff
     CelIndex( CompositeEventList &, const TString & componentName, TChain * componentChain ) ;
     virtual ~CelIndex() ;
-    virtual Int_t GetEntryNumberFriend( const TTree * celCompositeEvents ) ; // the main method
+    virtual Long64_t GetEntryNumberFriend( const TTree * celCompositeEvents ) ; // the main method
     virtual Long64_t GetN() const ; // total number of Events in the index
 
     // Dummy implementation

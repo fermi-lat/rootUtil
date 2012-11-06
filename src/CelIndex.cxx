@@ -2,7 +2,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.cxx,v 1.1 2008/03/13 14:04:46 chamont Exp $
+*    File: $Id: CelIndex.cxx,v 1.11 2008/08/22 13:13:45 chamont Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -41,7 +41,7 @@ Long64_t CelIndex::GetN() const
   return _cel->numEvents() ;
  }
 
-Int_t CelIndex::GetEntryNumberFriend( const TTree * eventLinksChain )
+Long64_t CelIndex::GetEntryNumberFriend( const TTree * eventLinksChain )
  {
   if (_cel==0||_component==0)
    { return -1 ; }
