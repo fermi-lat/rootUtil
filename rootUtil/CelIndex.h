@@ -5,7 +5,7 @@
 /*
 * Project: GLAST
 * Package: rootUtil
-*    File: $Id: CelIndex.h,v 1.9 2008/08/22 13:13:45 chamont Exp $
+*    File: $Id: CelIndex.h,v 1.10 2012/11/06 00:54:12 heather Exp $
 * Authors:
 *   EC, Eric Charles, SLAC, echarles@slac.stanford.edu
 *   DC, David Chamont, LLR, chamont@llr.in2p3.fr
@@ -67,9 +67,9 @@ class CelIndex : public TVirtualIndex
      { fTree = const_cast<TTree*>(tree) ; }
   
     // Unsupported part of the TVirtualIndex interface
-    virtual Long64_t GetEntryNumberWithBestIndex( Int_t, Int_t ) const
+    virtual Long64_t GetEntryNumberWithBestIndex( Long64_t, Long64_t ) const
      { MayNotUse("GetEntryNumberWithBestIndex") ; return 0 ; }
-    virtual Long64_t GetEntryNumberWithIndex( Int_t, Int_t ) const
+    virtual Long64_t GetEntryNumberWithIndex( Long64_t, Long64_t ) const
      { MayNotUse("GetEntryNumberWithIndex") ; return 0; }
     virtual const char * GetMajorName() const
      { MayNotUse("GetMajorName") ; return 0 ; }
