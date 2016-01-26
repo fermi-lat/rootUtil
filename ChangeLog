@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jan 26 07:24:49 PST 2016
+GlastRelease-scons/rootUtil/rootUtil
+
+Modified Files:
+	CelIndex.h 
+Log Message:
+patch for ROOT v5.34.34, finish update to Long64
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-10-04, operation: add
 Package: rootUtil
