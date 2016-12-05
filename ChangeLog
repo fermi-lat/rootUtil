@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-20-10-04-gr01, operation: add
 Package: rootUtil
+User: heather  Mon Dec  5 09:19:58 2016
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-20-10-04-gr01, operation: add
+Package: rootUtil
 User: heather  Mon Dec  5 09:01:11 2016
 Files:
   rootUtil/.cvsignore  1.2
